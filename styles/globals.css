@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.aboutMe {
+  position: relative;
+  /* background-color: orange; */
+}
+
+.aboutMe::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 80%;
+  max-height: 80px;
+  top: 6px;
+  left: -15px;
+  border-radius: 100vw;
+  background-color: #5b21b6;
+}
