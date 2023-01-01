@@ -23,13 +23,13 @@ const Projects = () => {
   return (
     <div className="mb-8 space-y-4 px-3">
       <h2 className="mb-3 font-bold">Projects</h2>
-      <div className="myGrid grid gap-4 md:grid-cols-2 ">
+      <div className="myGrid grid gap-4 md:grid-cols-2 lg:grid-cols-3 ">
         {displayProjects.map((project) => (
           <Card key={project.id} card={project} />
         ))}
       </div>
-      <div onClick={showProjects} className="pointer mx-auto grid w-[40%]">
-        <Button key={uniqid()} text={buttonText} />
+      <div onClick={showProjects} className="pointer grid">
+        <Button text={buttonText} styles={"w-1/2 mx-auto"} />
       </div>
     </div>
   );
