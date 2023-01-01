@@ -21,9 +21,9 @@ const Projects = () => {
   }
 
   return (
-    <div className="space-y-4 px-3">
+    <div className="mb-8 space-y-4 px-3">
       <h2 className="mb-3 font-bold">Projects</h2>
-      <div className="myGrid grid gap-4 md:grid-cols-3 ">
+      <div className="myGrid grid gap-4 md:grid-cols-2 ">
         {displayProjects.map((project) => (
           <Card key={project.id} card={project} />
         ))}

@@ -5,18 +5,16 @@ import { Url } from "url";
 interface Props {
   text: string;
   color?: string;
+  width?: string;
+  styles?: string;
 }
 
-const Button: FC<Props> = ({ text, color }) => {
-  const style = color
-    ? {
-        backgroundColor: color,
-      }
-    : {};
+const Button: FC<Props> = ({ text, color, width, styles }) => {
+  const style = { backgroundColor: color || "", width: width || "" } || "";
   return (
     <button
       style={style}
-      className="max-w-[64] rounded-[.35rem] bg-primary py-2 px-[.75rem] tracking-wide text-white"
+      className={` rounded-[.35rem] bg-primary py-2 px-[.75rem] text-xs text-white md:text-sm md:tracking-wide ${styles}`}
     >
       {text}
     </button>

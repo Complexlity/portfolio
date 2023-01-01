@@ -22,7 +22,7 @@ const Card: FC<CardsProps> = ({ card }) => {
           height={400}
         />
       </div>
-      <div className="grid gap-2 p-3">
+      <div className="grid gap-2 py-4 px-6">
         <h1 className="text-xl font-bold uppercase">{card.title}</h1>
         <div className="flex flex-wrap gap-2 text-sm">
           {card.techologies.map((value) => (

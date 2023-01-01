@@ -4,7 +4,6 @@
 
 .aboutMe {
   position: relative;
-  /* background-color: orange; */
 }
 
 .aboutMe::before {
@@ -16,5 +15,20 @@
   top: 6px;
   left: -15px;
   border-radius: 100vw;
+  /* background-color: #5b21b6; */
+}
+
+.contact-me {
+  position: relative;
+  width: fit-content;
+}
+
+.contact-me::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 60%;
+  bottom: -5px;
   background-color: #5b21b6;
+  height: 2px;
 }
