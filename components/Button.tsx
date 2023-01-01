@@ -16,7 +16,7 @@ const Button: FC<Props> = ({ text, color }) => {
   return (
     <button
       style={style}
-      className="max-w-[64] rounded-[.35rem] bg-primary py-2 px-[.75rem] text-white"
+      className="max-w-[64] rounded-[.35rem] bg-primary py-2 px-[.75rem] tracking-wide text-white"
     >
       {text}
     </button>

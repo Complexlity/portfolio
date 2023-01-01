@@ -3,7 +3,8 @@ import Link from "next/link";
 import { FC } from "react";
 import projectImg from "../../assets/hero-image.png";
 import Button from "../Button";
-import projects, { ProjectsType } from "./projects";
+import { ProjectsType } from "./projects";
+import uniqid from "uniqid";
 
 interface CardsProps {
   card: ProjectsType;
@@ -25,7 +26,7 @@ const Card: FC<CardsProps> = ({ card }) => {
         <h1 className="text-xl font-bold uppercase">{card.title}</h1>
         <div className="flex flex-wrap gap-2 text-sm">
           {card.techologies.map((value) => (
-            <Button text={value} />
+            <Button key={uniqid()} text={value.toUpperCase()} />
           ))}
         </div>
         <p>{card.description}</p>
