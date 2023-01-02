@@ -17,35 +17,39 @@ const Hero = () => {
         />
       </div>
       <div className="grid gap-3 px-1 text-center md:text-start">
-        <p className="text-lg">DEVELOPER</p>
-        <p className="text-4xl font-semibold text-primary">Complexlity</p>
+        <div className="font-raleway text-4xl font-bold text-gray-600 sm:text-5xl">
+          <h1>
+            Hi I'm <span className="text-primary ">Complexlity</span>
+          </h1>
+          <h1>A Front-End Web Developer</h1>
+        </div>
         <p className="mx-auto w-full max-w-[45ch] md:m-0 md:max-w-[65ch]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
           dignissimos libero qui porro esse molestiae!
         </p>
         <div className="grid justify-center md:justify-start">
-          <div className="mx-auto flex w-full content-center items-center gap-6 py-4">
+          <div className="bg- mx-auto flex w-full content-center items-center gap-4 py-4 md:gap-6">
             <a
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noreferrer"
             >
-              <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
+              <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110 sm:p-6">
                 <FaLinkedinIn />
               </div>
             </a>
             <a href="https://github.com/" target="_blank" rel="noreferrer">
-              <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
+              <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110 sm:p-6">
                 <FaGithub />
               </div>
             </a>
             <Link href="/#contact">
-              <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
+              <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110 sm:p-6">
                 <AiOutlineMail />
               </div>
             </Link>
             <Link href="#">
-              <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
+              <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110 sm:p-6">
                 <BsFillPersonLinesFill />
               </div>
             </Link>

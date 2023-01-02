@@ -10,7 +10,7 @@ const Navbar = () => {
       <div>
         <Image className="max-h-full w-auto" src={complexIcon} alt="Logo" />
       </div>
-      <div className="flex gap-4 sm:gap-12">
+      <div className="flex hidden gap-4 sm:gap-12 md:flex">
         <Link href="#hero" className="py-2">
           Home
         </Link>

@@ -11,6 +11,9 @@ module.exports = {
         primaryLight: "#8b5cf6",
       },
     },
+    fontFamily: {
+      raleway: ["raleway", "sans-serif"],
+    },
   },
   plugins: [],
 };
