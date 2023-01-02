@@ -32,14 +32,3 @@
   background-color: #5b21b6;
   height: 2px;
 }
-
-@keyframes navFade {
-  from {
-    opacity: 0;
-    transform: translateY(-5rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-}
