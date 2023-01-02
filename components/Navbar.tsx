@@ -7,10 +7,10 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <nav className="flex  justify-between ">
-      <div>
+      <div className="w-10 md:w-12">
         <Image className="max-h-full w-auto" src={complexIcon} alt="Logo" />
       </div>
-      <div className="flex hidden gap-4 sm:gap-12 md:flex">
+      <div className="hidden gap-4 sm:gap-12 md:flex">
         <Link href="#hero" className="py-2">
           Home
         </Link>

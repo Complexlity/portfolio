@@ -18,8 +18,8 @@ const Hero = () => {
       </div>
       <div className="grid gap-3 px-1 text-center md:text-start">
         <div className="font-raleway text-4xl font-bold text-gray-600 sm:text-5xl">
-          <h1>
-            Hi I'm <span className="text-primary ">Complexlity</span>
+          <h1 className="mb-2 sm:mb-4">
+            Hi, I'm <span className="text-primary ">Complexlity</span>
           </h1>
           <h1>A Front-End Web Developer</h1>
         </div>
