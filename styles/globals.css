@@ -12,7 +12,7 @@ html {
 }
 
 section {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 4rem;
 }
 
 .aboutMe::before {
@@ -28,6 +28,7 @@ section {
 
 .contact-me {
   position: relative;
+  z-index: 0;
   width: fit-content;
 }
 
