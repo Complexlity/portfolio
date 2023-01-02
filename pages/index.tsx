@@ -22,7 +22,7 @@ export default function Home() {
           rel="stylesheet"
         ></link>
       </Head>
-      <div className="mx-auto w-full max-w-[80rem] bg-gray-200 p-2 sm:p-4 ">
+      <div className="mx-auto w-full max-w-[80rem] bg-gray-200">
         <Navbar />
         <div className="grid gap-12">
           {/* Hero Section  */}
