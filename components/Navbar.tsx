@@ -1,7 +1,7 @@
 import Link from "next/link";
 import complexIcon from "../assets/complex.png";
 import { Spin as Hamburger } from "hamburger-react";
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 
 import Image from "next/image";
 
@@ -14,7 +14,7 @@ const Navbar = () => {
     transform: `translateY(${navTranslate})`,
   };
   return (
-    <nav className="sticky top-0 flex flex-col justify-between md:flex-row ">
+    <nav className="sticky top-0 flex-col justify-between md:flex md:flex-row ">
       <div className="flex items-center justify-between">
         <div className="w-10 md:w-12">
           <Image className="max-h-full w-auto" src={complexIcon} alt="Logo" />
@@ -23,7 +23,9 @@ const Navbar = () => {
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
       </div>
-      <NavLinks animation={animation} mobile={true} />
+      <div onClick={setOpen.bind(this, false)}>
+        <NavLinks animation={animation} mobile={true} />
+      </div>
       <NavLinks mobile={false} />
     </nav>
   );
@@ -42,21 +44,21 @@ const NavLinks = ({ animation, mobile }: navlinks) => {
     : `hidden gap-8 py-4 uppercase md:flex`;
   return (
     <div style={animation} className={wrapperStyles}>
-      <Link href="#hero" className={linkStyles}>
+      <a href="#hero" className={linkStyles}>
         Home
-      </Link>
-      <Link href="#projects" className={linkStyles}>
+      </a>
+      <a href="#about" className={linkStyles}>
         About
-      </Link>
-      <Link href="#projects" className={linkStyles}>
+      </a>
+      <a href="#projects" className={linkStyles}>
         Projects
-      </Link>
-      <Link href="#projects" className={linkStyles}>
+      </a>
+      <a href="#skills" className={linkStyles}>
         Skills
-      </Link>
-      <Link href="#projects" className={linkStyles}>
+      </a>
+      <a href="#contact" className={linkStyles}>
         Contact
-      </Link>
+      </a>
     </div>
   );
 };

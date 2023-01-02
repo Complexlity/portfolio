@@ -7,6 +7,14 @@
   position: relative;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 6rem;
+}
+
 .aboutMe::before {
   content: "";
   position: absolute;

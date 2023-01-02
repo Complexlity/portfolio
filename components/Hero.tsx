@@ -6,7 +6,10 @@ import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 const Hero = () => {
   return (
-    <div className="grid items-center space-y-8 pt-8 md:grid-cols-2">
+    <section
+      id="hero"
+      className="grid items-center space-y-8 pt-8 md:grid-cols-2"
+    >
       <div className="space-y-8 px-4 md:hidden">
         <Image
           className="mx-auto w-full "
@@ -65,7 +68,7 @@ const Hero = () => {
           alt="Picture of Me"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

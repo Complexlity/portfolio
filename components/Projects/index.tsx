@@ -21,7 +21,7 @@ const Projects = () => {
   }
 
   return (
-    <div className="mb-8 space-y-4 px-3">
+    <section id="projects" className="mb-8 space-y-4 px-3">
       <h2 className="mb-3 font-bold">Projects</h2>
       <div className="myGrid grid gap-4 md:grid-cols-2 lg:grid-cols-3 ">
         {displayProjects.map((project) => (
@@ -31,7 +31,7 @@ const Projects = () => {
       <div onClick={showProjects} className="pointer grid">
         <Button text={buttonText} styles={"w-1/2 mx-auto"} />
       </div>
-    </div>
+    </section>
   );
 };
 
