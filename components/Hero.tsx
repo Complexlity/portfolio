@@ -1,6 +1,9 @@
 import Image from "next/image";
 import avatar from "../assets/hero-image.png";
-import Button from "./Button";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import Link from "next/link";
+import { AiOutlineMail } from "react-icons/ai";
 const Hero = () => {
   return (
     <div className="grid items-center space-y-8 pt-8 md:grid-cols-2">
@@ -21,7 +24,32 @@ const Hero = () => {
           dignissimos libero qui porro esse molestiae!
         </p>
         <div className="grid justify-center md:justify-start">
-          <Button text="Contact Me" />
+          <div className="mx-auto flex w-full content-center items-center gap-6 py-4">
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
+                <FaLinkedinIn />
+              </div>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">
+              <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
+                <FaGithub />
+              </div>
+            </a>
+            <Link href="/#contact">
+              <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
+                <AiOutlineMail />
+              </div>
+            </Link>
+            <Link href="#">
+              <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
+                <BsFillPersonLinesFill />
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="hidden space-y-8 px-4 md:block md:px-0">
