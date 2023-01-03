@@ -20,7 +20,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
-  const navLook = shadow ? "bg-gray-200 shadow-md shadow-gray-300" : "";
+  const navLook = shadow ? "bg-white shadow-primaryLight" : "";
   const navTranslate = isOpen ? `0px` : `-20rem`;
   const animation = {
     transition: `all .5s ease-in-out`,

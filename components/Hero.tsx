@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="grid items-center space-y-8 pt-8 md:grid-cols-2"
+      className="grid max-h-[calc(100%-10rem)] items-center space-y-8 pt-8 md:grid-cols-2"
     >
-      <div className="space-y-8 px-4 md:hidden">
+      <div className="px-4 md:hidden">
         <Image
           className="mx-auto w-full "
           src={avatar}
@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hidden space-y-8 px-4 md:block md:px-0">
+      <div className="hidden px-4 md:block md:px-0">
         <Image
           className="mx-auto w-full "
           src={avatar}

@@ -2,7 +2,6 @@ import projects from "./projects";
 import Card from "./Card";
 import Button from "../Button";
 import { useState } from "react";
-import uniqid from "uniqid";
 
 const Projects = () => {
   const shownProjects = projects.slice(0, 3);
@@ -21,15 +20,20 @@ const Projects = () => {
   }
 
   return (
-    <section id="projects" className="mb-8 space-y-4 px-3">
-      <h2 className="mb-3 font-bold">Projects</h2>
+    <section id="projects" className="grid px-3">
+      <h2 className=" text-xl font-bold uppercase tracking-widest text-primary">
+        Projects
+      </h2>
+      <h2 className=" py-4 font-raleway text-3xl font-semibold">
+        What I've Built
+      </h2>
       <div className="myGrid grid gap-4 md:grid-cols-2 lg:grid-cols-3 ">
         {displayProjects.map((project) => (
           <Card key={project.id} card={project} />
         ))}
       </div>
       <div onClick={showProjects} className="pointer grid">
-        <Button text={buttonText} styles={"w-1/2 mx-auto"} />
+        <Button text={buttonText} styles={"mt-4 w-1/2 mx-auto"} />
       </div>
     </section>
   );
