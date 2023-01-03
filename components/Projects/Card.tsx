@@ -12,7 +12,7 @@ interface CardsProps {
 
 const Card: FC<CardsProps> = ({ card }) => {
   return (
-    <div className="grid overflow-hidden rounded-lg shadow-md">
+    <div className="grid overflow-hidden rounded-lg shadow-md duration-75 ease-in-out hover:scale-[101%] dark:shadow-orange-800">
       <div>
         <Image
           className="w-full"
@@ -23,21 +23,23 @@ const Card: FC<CardsProps> = ({ card }) => {
         />
       </div>
       <div className="grid gap-2 py-4 px-6">
-        <h1 className="text-xl font-bold uppercase">{card.title}</h1>
+        <h1 className="text-xl font-semibold uppercase dark:text-gray-200">
+          {card.title}
+        </h1>
         <div className="flex flex-wrap gap-2 text-sm">
           {card.techologies.map((value) => (
             <Button key={uniqid()} text={value.toUpperCase()} />
           ))}
         </div>
-        <p>{card.description}</p>
-        <div className="mt-2 flex justify-center gap-8">
+        <p className="dark:text-gray-200">{card.description}</p>
+        {/* <div className="mt-2 flex justify-center gap-8">
           <Link href={card.links.live}>
             <Button text="LIVE" color="green" />
           </Link>
           <Link href={card.links.code}>
             <Button text="CODE" color="orange" />
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

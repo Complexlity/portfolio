@@ -5,10 +5,12 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 const Hero = () => {
+  const iconsStyles =
+    "cursor-pointer rounded-full p-3 shadow-md shadow-gray-500 shadow-orange-200 duration-300 ease-in hover:scale-110 sm:p-4";
   return (
     <section
       id="hero"
-      className="grid h-[calc(100vh-7rem)] items-center space-y-8 pt-8 md:grid-cols-2"
+      className="grid h-[calc(100vh-7rem)] items-center space-y-8 pt-8 dark:text-white md:grid-cols-2"
     >
       <div className="px-4 md:hidden">
         <Image
@@ -20,9 +22,12 @@ const Hero = () => {
         />
       </div>
       <div className="grid gap-3 px-1 text-center md:text-start">
-        <div className="font-raleway text-4xl font-bold text-gray-600 sm:text-5xl">
+        <div className="font-raleway text-3xl font-bold text-gray-600 dark:text-gray-200 sm:text-4xl md:text-5xl">
           <h1 className="mb-2 sm:mb-4">
-            Hi, I'm <span className="text-primary ">Complexlity</span>
+            Hi, I'm{" "}
+            <span className="text-primary dark:text-orange-300 ">
+              Complexlity
+            </span>
           </h1>
           <h1>A Front-End Web Developer</h1>
         </div>
@@ -37,23 +42,23 @@ const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110 sm:p-6">
-                <FaLinkedinIn />
+              <div className={iconsStyles}>
+                <FaLinkedinIn size={24} />
               </div>
             </a>
             <a href="https://github.com/" target="_blank" rel="noreferrer">
-              <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110 sm:p-6">
-                <FaGithub />
+              <div className={iconsStyles}>
+                <FaGithub size={24} />
               </div>
             </a>
             <Link href="/#contact">
-              <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110 sm:p-6">
-                <AiOutlineMail />
+              <div className={iconsStyles}>
+                <AiOutlineMail size={24} />
               </div>
             </Link>
             <Link href="#">
-              <div className="cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110 sm:p-6">
-                <BsFillPersonLinesFill />
+              <div className={iconsStyles}>
+                <BsFillPersonLinesFill size={24} />
               </div>
             </Link>
           </div>

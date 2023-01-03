@@ -1,6 +1,4 @@
-import Link from "next/link";
 import { FC } from "react";
-import { Url } from "url";
 
 interface Props {
   text: string;
@@ -14,7 +12,7 @@ const Button: FC<Props> = ({ text, color, width, styles }) => {
   return (
     <button
       style={style}
-      className={` rounded-[.35rem] bg-primary py-2 px-[.75rem] text-xs text-white md:text-sm md:tracking-wide ${styles}`}
+      className={`rounded-[.35rem] bg-primary py-1 px-[.65rem] text-xs text-white dark:bg-orange-400 dark:text-black  md:text-sm md:tracking-wide ${styles}`}
     >
       {text}
     </button>

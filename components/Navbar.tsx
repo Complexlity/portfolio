@@ -81,7 +81,7 @@ type navlinks = {
 
 const NavLinks = ({ animation, mobile }: navlinks) => {
   const linkStyles = mobile
-    ? `px-2 py-2 bg-gray-200  border-b-2 border-black`
+    ? `px-2 py-2 bg-gray-200  border-b-2 border-black dark:bg-darkBg dark:border-orange-400`
     : "";
 
   const wrapperStyles = mobile
