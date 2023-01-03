@@ -28,6 +28,7 @@ export default function Home() {
               <Hero />
               {/* About section  */}
               <About2 />
+              {/* <About /> */}
               {/* Projects Section */}
               <Projects />
               {/* Skills Section */}

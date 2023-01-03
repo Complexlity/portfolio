@@ -6,7 +6,7 @@ import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 const Hero = () => {
   const iconsStyles =
-    "cursor-pointer rounded-full p-3 shadow-md shadow-gray-500 shadow-orange-200 duration-300 ease-in hover:scale-110 sm:p-4";
+    "cursor-pointer rounded-full p-3 shadow-md shadow-gray-500 dark:shadow-orange-200 duration-300 ease-in hover:scale-110 sm:p-4";
   return (
     <section
       id="hero"

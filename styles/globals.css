@@ -19,7 +19,7 @@ html {
 }
 
 section {
-  scroll-margin-top: 4rem;
+  scroll-margin-top: 7rem;
 }
 
 .aboutMe::before {
@@ -28,6 +28,7 @@ section {
   width: 6px;
   height: 80%;
   max-height: 80px;
+  background-color: #5b21b6;
   top: 6px;
   left: -15px;
   border-radius: 100vw;
@@ -45,6 +46,10 @@ section {
   left: 0;
   width: 60%;
   bottom: -5px;
-  background-color: #5b21b6;
+  background-color: black;
   height: 2px;
+}
+
+.dark .contact-me::after {
+  background-color: white;
 }
