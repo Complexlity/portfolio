@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="grid max-h-[calc(100%-10rem)] items-center space-y-8 pt-8 md:grid-cols-2"
+      className="grid h-[calc(100vh-7rem)] items-center space-y-8 pt-8 md:grid-cols-2"
     >
       <div className="px-4 md:hidden">
         <Image

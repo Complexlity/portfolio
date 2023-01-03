@@ -28,7 +28,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
     window.addEventListener("scroll", handleShadow);
   }, []);
 
-  const navLook = shadow ? "bg-white shadow-primaryLight" : "";
+  const navLook = shadow ? "dark:bg-darkBg bg-white shadow-primaryLight" : "";
   const navTranslate = isOpen ? `0px` : `-20rem`;
   const animation = {
     transition: `all .5s ease-in-out`,
@@ -36,7 +36,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
   };
   return (
     <nav
-      className={`${navLook} sticky top-0 z-10 flex-col justify-between md:flex md:flex-row`}
+      className={`${navLook} sticky top-0 z-10 flex-col justify-between dark:text-white md:flex md:flex-row`}
     >
       <div className="flex items-center justify-between">
         <div className="w-10 md:w-12">
@@ -46,9 +46,16 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
       </div>
-      <div className="flex" onClick={setOpen.bind(this, false)}>
+      <div onClick={setOpen.bind(this, false)}>
         <NavLinks animation={animation} mobile={true} />
-        <div>
+      </div>
+
+      <div
+        className="flex items-center gap-4 "
+        onClick={setOpen.bind(this, false)}
+      >
+        <NavLinks mobile={false} />
+        <div className="hidden md:block">
           {!darkTheme && (
             <BsFillSunFill
               className="h-6 w-6 cursor-pointer text-blue-500"
@@ -62,10 +69,6 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
             />
           )}
         </div>
-      </div>
-
-      <div onClick={setOpen.bind(this, false)}>
-        <NavLinks mobile={false} />
       </div>
     </nav>
   );
