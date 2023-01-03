@@ -1,14 +1,22 @@
 import complexIcon from "../assets/complex.png";
 import { Spin as Hamburger } from "hamburger-react";
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
 
 import Image from "next/image";
 
-const Navbar = () => {
+interface Props {
+  darkTheme: boolean;
+  setDarkTheme: Dispatch<SetStateAction<boolean>>;
+}
+
+const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
   const [isOpen, setOpen] = useState(false);
   const [shadow, setShadow] = useState(false);
 
+  function toggleTheme() {
+    setDarkTheme(!darkTheme);
+  }
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -38,8 +46,22 @@ const Navbar = () => {
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
       </div>
-      <div onClick={setOpen.bind(this, false)}>
+      <div className="flex" onClick={setOpen.bind(this, false)}>
         <NavLinks animation={animation} mobile={true} />
+        <div>
+          {!darkTheme && (
+            <BsFillSunFill
+              className="h-6 w-6 cursor-pointer text-blue-500"
+              onClick={toggleTheme}
+            />
+          )}
+          {darkTheme && (
+            <BsMoonFill
+              className="h-6 w-6 scale-[90%] cursor-pointer text-amber-100"
+              onClick={toggleTheme}
+            />
+          )}
+        </div>
       </div>
 
       <div onClick={setOpen.bind(this, false)}>

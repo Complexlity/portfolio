@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState } from "react";
 import About from "../components/About";
 import About2 from "../components/About2";
 import Contact from "../components/Contact";
@@ -9,6 +10,7 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <>
       <Head>
@@ -17,7 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="mx-auto w-full  max-w-[80rem] pb-4 ">
-        <Navbar />
+        <Navbar darkTheme={darkMode} setDarkTheme={setDarkMode} />
         <div className="mx-auto grid gap-12">
           {/* Hero Section  */}
           <Hero />
