@@ -1,7 +1,7 @@
-import Link from "next/link";
 import complexIcon from "../assets/complex.png";
 import { Spin as Hamburger } from "hamburger-react";
 import { useEffect, useState } from "react";
+import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
 
 import Image from "next/image";
 
