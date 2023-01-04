@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
-.aboutMe {
-  position: relative;
-}
 
 @layer base {
   body {
@@ -22,6 +19,9 @@
   section#about {
     @apply sm:scroll-mt-16 lg:scroll-mt-8;
   }
+}
+
+.mygrid {
 }
 
 html {
