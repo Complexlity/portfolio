@@ -5,6 +5,8 @@ import projectImg from "../../assets/hero-image.png";
 import Button from "../Button";
 import { ProjectsType } from "./projects";
 import uniqid from "uniqid";
+import { TbWorld } from "react-icons/tb";
+import { AiFillGithub } from "react-icons/ai";
 
 interface CardsProps {
   card: ProjectsType;
@@ -12,7 +14,7 @@ interface CardsProps {
 
 const Card: FC<CardsProps> = ({ card }) => {
   return (
-    <div className="grid overflow-hidden rounded-lg shadow-md duration-75 ease-in-out hover:scale-[101%] dark:shadow-orange-800">
+    <div className="group grid overflow-hidden rounded-lg shadow-md duration-75 ease-in-out hover:scale-[101%] dark:shadow-orange-800">
       <div>
         <Image
           className="w-full"
@@ -40,6 +42,21 @@ const Card: FC<CardsProps> = ({ card }) => {
             <Button text="CODE" color="orange" />
           </Link>
         </div> */}
+
+        <div className="absolute inset-0  hidden items-center justify-center gap-8 bg-gradient-to-r from-blue-700/95 to-sky-800/95 group-hover:flex dark:from-green-600/95 dark:to-cyan-900/95">
+          <Link href={card.links.live}>
+            <TbWorld
+              className="w-full cursor-pointer text-gray-800 dark:text-gray-300"
+              size={128}
+            />
+          </Link>
+          <Link href={card.links.code}>
+            <AiFillGithub
+              className="w-full cursor-pointer text-gray-800 dark:text-gray-300"
+              size={128}
+            />
+          </Link>
+        </div>
       </div>
     </div>
   );

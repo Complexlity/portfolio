@@ -11,37 +11,35 @@ import W3CAGImg from "./icons/W3CAG.png"
 import pythonImg from "./icons/python.svg"
 import joomlaImg from "./icons/joomla.svg"
 
+
 export const skills = [
 
-    {
-        image: javascriptImg,
-        title: "JavaScript"
-    }, {
-        image: reactjsImg,
-        title: "ReactJs"
-    }, {
-        image: nextjsdarkImg,
-        title: "NextJs"
-    }, {
-        image: gitImg,
-        title: "Git"
-    }, {
-        image: jestImg,
-        title: "Jest"
-    }, {
-        image: tailwindcssImg,
-        title: "Tailwind"
-    }, {
-        image: reduxImg,
-        title: "Redux"
-    }, {
-        image: W3CAGImg,
-        title: "W3 A11 Guidelines"
-    }, {
-        image: pythonImg,
-        title: "Python"
-    }, {
-        image: joomlaImg,
-        title: "Joomla"
-    },
+  {
+    image: javascriptImg,
+    title: "JavaScript"
+  }, {
+    image: reactjsImg,
+    title: "ReactJs"
+  }, {
+    image: gitImg,
+    title: "Git"
+  }, {
+    image: jestImg,
+    title: "Jest"
+  }, {
+    image: tailwindcssImg,
+    title: "Tailwind"
+  }, {
+    image: reduxImg,
+    title: "Redux"
+  }, {
+    image: W3CAGImg,
+    title: "W3 A11 Guidelines"
+  }, {
+    image: pythonImg,
+    title: "Python"
+  }, {
+    image: joomlaImg,
+    title: "Joomla"
+  },
 ]
