@@ -33,12 +33,6 @@ export const skills = [
     image: reduxImg,
     title: "Redux"
   }, {
-    image: W3CAGImg,
-    title: "W3 A11 Guidelines"
-  }, {
-    image: pythonImg,
-    title: "Python"
-  }, {
     image: joomlaImg,
     title: "Joomla"
   },

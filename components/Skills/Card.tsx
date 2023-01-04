@@ -7,15 +7,9 @@ interface Props {
 
 const Card: FC<Props> = ({ item }) => {
   return (
-    <div className="relative">
-      <div className="mx-auto grid h-24 w-24 items-center justify-start">
-        <Image
-          className="w-full object-contain"
-          src={item.image}
-          alt={item.title}
-        />
-      </div>
-      <p className="text-center text-[3vw] dark:text-gray-200 md:text-xl">
+    <div className="mygrid mt-4 grid h-16 w-16  md:h-24 md:w-24">
+      <Image className="object-cover" src={item.image} alt={item.title} />
+      <p className=" text-center text-[3vw] dark:text-gray-200 md:text-xl">
         {item.title}
       </p>
     </div>
