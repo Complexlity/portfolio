@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useState } from "react";
 import About from "../components/About";
 import About2 from "../components/About2";
 import Contact from "../components/Contact";
@@ -8,9 +7,10 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import { useThemeContext } from "./Contexts/ThemeContext";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const darkMode = useThemeContext().darkMode;
   const darkClass = darkMode ? "dark" : "";
   return (
     <>
@@ -22,10 +22,10 @@ export default function Home() {
       <div className={darkClass}>
         <div className="dark:bg-darkBg">
           <div className={" mx-auto w-full max-w-[80rem] px-8  pb-4  "}>
-            <Navbar darkTheme={darkMode} setDarkTheme={setDarkMode} />
+            <Navbar />
             <div className=" mx-auto grid">
               {/* Hero Section  */}
-              <Hero theme={darkMode} />
+              <Hero />
               {/* About section  */}
               <About2 />
               {/* <About /> */}

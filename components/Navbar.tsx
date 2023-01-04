@@ -1,19 +1,21 @@
 import complexIcon from "../assets/complex.png";
 import { Spin as Hamburger } from "hamburger-react";
-import reactSwitch from "react-switch";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
 
 import Image from "next/image";
+import { useThemeContext } from "../pages/Contexts/ThemeContext";
 
 interface Props {
   darkTheme: boolean;
   setDarkTheme: Dispatch<SetStateAction<boolean>>;
 }
 
-const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
+const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const darkTheme = useThemeContext().darkMode;
+  const setDarkTheme = useThemeContext().setDarkMode;
 
   function toggleTheme() {
     setDarkTheme(!darkTheme);
@@ -28,7 +30,6 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
     };
     window.addEventListener("scroll", handleShadow);
     window.addEventListener("scroll", () => setOpen(false));
-    // window.addEventListener("click", () => setOpen(false));
   }, []);
 
   const navLook = shadow
