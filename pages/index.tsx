@@ -23,7 +23,7 @@ export default function Home() {
         <div className="dark:bg-darkBg">
           <div className={" mx-auto w-full max-w-[80rem] px-8  pb-4  "}>
             <Navbar darkTheme={darkMode} setDarkTheme={setDarkMode} />
-            <div className="mx-auto grid gap-12">
+            <div className=" mx-auto grid">
               {/* Hero Section  */}
               <Hero theme={darkMode} />
               {/* About section  */}

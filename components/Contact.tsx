@@ -3,7 +3,7 @@ import Button from "./Button";
 const Contact = () => {
   return (
     <section id="contact" className=" grid px-3 ">
-      <h2 className="contact-me mb-6 text-xl uppercase tracking-widest text-primary dark:text-orange-400 ">
+      <h2 className="contact-me mb-6 text-xl uppercase tracking-widest text-primary dark:text-orange-300 ">
         Connect with me
       </h2>
       <form className="myForm mx-auto  grid w-full">
