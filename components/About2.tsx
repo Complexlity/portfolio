@@ -10,14 +10,14 @@ const About = () => {
           <h2 className=" text-xl font-bold  uppercase tracking-widest text-primary dark:text-orange-300">
             About
           </h2>
-          <h3 className="py-2 font-raleway text-3xl  dark:text-gray-200">
+          <h3 className="py-2 font-raleway text-3xl  font-semibold dark:text-gray-200">
             Who I Am
           </h3>
           <div
             className="max-w-[65
             ch] justify-start"
           >
-            <p className="py-2 text-gray-600 dark:text-white">
+            <p className="py-2 text-gray-600 dark:text-gray-100">
               I specialize in building mobile responsive front-end UI
               applications that connect with API's and other backend
               technologies. I'm passionate about learning new technologies and
@@ -28,7 +28,7 @@ const About = () => {
               developer is not using one specific language, but choosing the
               best tool for the job.
             </p>
-            <p className="py-2 text-gray-600 dark:text-white">
+            <p className="py-2 text-gray-600 dark:text-gray-100">
               I started web developement in 2013 managing multiple e-commerce
               websites on CMS platforms such as WordPress, BigCommerce, and
               Shopify. I have experience working directly with clients and

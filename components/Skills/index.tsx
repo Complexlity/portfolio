@@ -8,7 +8,7 @@ const Skills = () => {
       <h2 className="mb-2 text-xl font-bold uppercase tracking-widest text-primary dark:text-orange-300">
         Skills
       </h2>
-      <h3 className="mb-2 py-4 font-raleway text-3xl font-semibold dark:text-gray-200">
+      <h3 className="mb-4  font-raleway text-3xl font-semibold dark:text-gray-200">
         What I Can Do
       </h3>
 

@@ -39,7 +39,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
   };
   return (
     <nav
-      className={`${navLook} sticky top-0 z-10 flex-col justify-between py-3 dark:text-white md:flex md:flex-row md:py-4`}
+      className={`${navLook} sticky top-0 z-10 flex-col justify-between py-3 dark:text-gray-100 md:flex md:flex-row md:py-4`}
     >
       <div className="flex items-center justify-between">
         <div className="w-10 md:w-12">
@@ -60,7 +60,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
           className="fixed bottom-4 right-8 rounded-full bg-primary/70 p-3 dark:bg-gray-500/90 md:static md:block md:rounded-none md:bg-inherit md:dark:bg-inherit"
         >
           {!darkTheme && (
-            <BsFillSunFill className="h-6 w-6 cursor-pointer text-white md:text-blue-500" />
+            <BsFillSunFill className="h-6 w-6 cursor-pointer text-gray-100 md:text-blue-500" />
           )}
           {darkTheme && (
             <BsMoonFill className="h-6 w-6 scale-[90%] cursor-pointer text-amber-200" />
