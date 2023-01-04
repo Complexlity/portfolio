@@ -31,7 +31,9 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
     // window.addEventListener("click", () => setOpen(false));
   }, []);
 
-  const navLook = shadow ? "dark:bg-darkBg bg-white shadow-primaryLight" : "";
+  const navLook = shadow
+    ? "dark:bg-darkBg bg-[#ecf0f3] shadow-primaryLight"
+    : "";
   const navTranslate = isOpen ? `0px` : `-20rem`;
   const animation = {
     transition: `all .5s ease-in-out`,

@@ -7,7 +7,7 @@ interface Props {
 
 const Card: FC<Props> = ({ item }) => {
   return (
-    <div className="">
+    <div className="group relative">
       <div className="mx-auto grid h-24 w-24 items-center justify-start">
         <Image
           className="w-full object-contain"
