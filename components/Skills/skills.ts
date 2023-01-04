@@ -1,4 +1,15 @@
 import javascriptImg from "./icons/javascript.svg"
+// import typescriptImg from "./icons/typescript.svg"
+import gitImg from "./icons/git.svg"
+import reactjsImg from "./icons/reactjs.svg"
+import nextjsdarkImg from "./icons/nextjs-light.svg"
+// import nextjslightImg from './icons/nextjs-dark.svg'
+import jestImg from "./icons/jest.svg"
+import tailwindcssImg from "./icons/tailwindcss.svg"
+import reduxImg from "./icons/redux.svg"
+import W3CAGImg from "./icons/W3CAG.png"
+import pythonImg from "./icons/python.svg"
+import joomlaImg from "./icons/joomla.svg"
 
 export const skills = [
 
@@ -6,37 +17,31 @@ export const skills = [
         image: javascriptImg,
         title: "JavaScript"
     }, {
-        image: javascriptImg,
-        title: "JavaScript"
+        image: reactjsImg,
+        title: "ReactJs"
     }, {
-        image: javascriptImg,
-        title: "JavaScript"
+        image: nextjsdarkImg,
+        title: "NextJs"
     }, {
-        image: javascriptImg,
-        title: "JavaScript"
+        image: gitImg,
+        title: "Git"
     }, {
-        image: javascriptImg,
-        title: "JavaScript"
+        image: jestImg,
+        title: "Jest"
     }, {
-        image: javascriptImg,
-        title: "JavaScript"
+        image: tailwindcssImg,
+        title: "Tailwind"
     }, {
-        image: javascriptImg,
-        title: "JavaScript"
+        image: reduxImg,
+        title: "Redux"
     }, {
-        image: javascriptImg,
-        title: "JavaScript"
+        image: W3CAGImg,
+        title: "W3 A11 Guidelines"
     }, {
-        image: javascriptImg,
-        title: "JavaScript"
+        image: pythonImg,
+        title: "Python"
     }, {
-        image: javascriptImg,
-        title: "JavaScript"
-    }, {
-        image: javascriptImg,
-        title: "JavaScript"
-    }, {
-        image: javascriptImg,
-        title: "JavaScript"
+        image: joomlaImg,
+        title: "Joomla"
     },
 ]
