@@ -12,7 +12,7 @@ const Hero = ({ theme }: { theme: boolean }) => {
   return (
     <section
       id="hero"
-      className="grid-flow-rows grid  h-[calc(100vh-7rem)] items-center space-y-8 pt-8 dark:text-white md:grid-cols-2"
+      className="grid-flow-rows grid  h-[calc(100vh-5rem)] items-center space-y-8 dark:text-white md:grid-cols-2"
     >
       <div className="mx-auto max-w-[800px] px-4 md:hidden">
         <Image

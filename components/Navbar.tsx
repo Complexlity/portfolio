@@ -39,7 +39,7 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
   };
   return (
     <nav
-      className={`${navLook} sticky top-0 z-10 flex-col justify-between py-4 dark:text-white md:flex md:flex-row`}
+      className={`${navLook} sticky top-0 z-10 flex-col justify-between py-3 dark:text-white md:flex md:flex-row md:py-4`}
     >
       <div className="flex items-center justify-between">
         <div className="w-10 md:w-12">

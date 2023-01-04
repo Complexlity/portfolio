@@ -24,9 +24,9 @@ const Projects = () => {
       <h2 className=" text-xl font-bold uppercase tracking-widest text-primary dark:text-orange-300">
         Projects
       </h2>
-      <h2 className="py-4 font-raleway text-3xl font-semibold dark:text-gray-200">
+      <h3 className="py-4 font-raleway text-3xl font-semibold dark:text-gray-200">
         What I've Built
-      </h2>
+      </h3>
       <div className="myGrid grid gap-4 md:grid-cols-2 lg:grid-cols-3 ">
         {displayProjects.map((project) => (
           <Card key={project.id} card={project} />

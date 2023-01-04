@@ -2,7 +2,7 @@ import Button from "./Button";
 
 const Contact = () => {
   return (
-    <section id="contact" className=" grid px-3 ">
+    <section id="contact" className=" mt-8 grid px-3 ">
       <h2 className="contact-me mb-6 text-xl uppercase tracking-widest text-primary dark:text-orange-300 ">
         Connect with me
       </h2>
@@ -16,7 +16,7 @@ const Contact = () => {
           placeholder="Message"
           id="message"
           cols={30}
-          rows={10}
+          rows={5}
         ></textarea>
         <div className=" text-center">
           <Button

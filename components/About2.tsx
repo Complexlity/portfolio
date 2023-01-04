@@ -4,15 +4,15 @@ import AboutImg from "../assets/hero-image.png";
 
 const About = () => {
   return (
-    <div id="about" className="flex w-full items-center p-2 md:h-screen">
+    <section id="about" className="flex w-full items-center px-2 md:h-screen">
       <div className="  gap-8 md:grid">
         <div className="">
           <h2 className=" text-xl font-bold  uppercase tracking-widest text-primary dark:text-orange-300">
             About
           </h2>
-          <h2 className="mb-2 py-4 font-raleway text-3xl font-semibold dark:text-gray-200">
+          <h3 className="py-2 font-raleway text-3xl  dark:text-gray-200">
             Who I Am
-          </h2>
+          </h3>
           <div
             className="max-w-[65
             ch] justify-start"
@@ -42,7 +42,7 @@ const About = () => {
           <Image src={AboutImg} className="rounded-xl" alt="/" />
         </div> */}
       </div>
-    </div>
+    </section>
   );
 };
 
