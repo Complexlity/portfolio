@@ -1,4 +1,4 @@
-import javascriptImg from "../../assets/javascript.svg"
+import javascriptImg from "./icons/javascript.svg"
 
 export const skills = [
 
