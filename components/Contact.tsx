@@ -22,7 +22,7 @@ const Contact = () => {
           <Button
             text="Send Message"
             styles={
-              "w-full max-w-[400px] py-[1rem] hover:dark:bg-orange-500 uppercase"
+              "w-full max-w-[400px] py-[.8rem] hover:dark:bg-orange-500 uppercase"
             }
           />
         </div>

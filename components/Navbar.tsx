@@ -53,23 +53,17 @@ const Navbar = ({ darkTheme, setDarkTheme }: Props) => {
         <NavLinks animation={animation} mobile={true} />
       </div>
 
-      <div
-        className="flex items-center gap-4 "
-        onClick={setOpen.bind(this, false)}
-      >
+      <div className="flex items-center gap-4 ">
         <NavLinks mobile={false} />
-        <div className="hidden md:block">
+        <div
+          onClick={toggleTheme}
+          className="fixed bottom-4 right-8 rounded-full bg-primary/70 p-3 dark:bg-gray-500/90 md:static md:block md:rounded-none md:bg-inherit md:dark:bg-inherit"
+        >
           {!darkTheme && (
-            <BsFillSunFill
-              className="h-6 w-6 cursor-pointer text-blue-500"
-              onClick={toggleTheme}
-            />
+            <BsFillSunFill className="h-6 w-6 cursor-pointer text-white md:text-blue-500" />
           )}
           {darkTheme && (
-            <BsMoonFill
-              className="h-6 w-6 scale-[90%] cursor-pointer text-amber-100"
-              onClick={toggleTheme}
-            />
+            <BsMoonFill className="h-6 w-6 scale-[90%] cursor-pointer text-amber-200" />
           )}
         </div>
       </div>
@@ -84,11 +78,11 @@ type navlinks = {
 
 const NavLinks = ({ animation, mobile }: navlinks) => {
   const linkStyles = mobile
-    ? `px-2 py-2 bg-gray-200  border-b-2 border-black dark:bg-darkBg dark:border-orange-400`
+    ? `px-2 py-3  border-b-2 border-primary  dark:border-orange-400`
     : "";
 
   const wrapperStyles = mobile
-    ? `absolute right-0 left-0 top-16 flex flex-col bg-gray-300 pb-2 md:hidden`
+    ? `absolute right-0 left-0 bg-gray-100 px-2 pb-2 dark:bg-darkBg  top-16 flex flex-col  md:hidden`
     : `hidden gap-8 py-4 uppercase md:flex`;
   return (
     <div style={animation} className={wrapperStyles}>
