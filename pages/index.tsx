@@ -25,7 +25,7 @@ export default function Home() {
             <Navbar darkTheme={darkMode} setDarkTheme={setDarkMode} />
             <div className="mx-auto grid gap-12">
               {/* Hero Section  */}
-              <Hero />
+              <Hero theme={darkMode} />
               {/* About section  */}
               <About2 />
               {/* <About /> */}

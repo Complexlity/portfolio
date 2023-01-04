@@ -1,10 +1,12 @@
 import Image from "next/image";
-import avatar from "../assets/hero-image.png";
+import darkImg from "../assets/darkImage.png";
+import lightImg from "../assets/lightImage.png";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
-const Hero = () => {
+const Hero = ({ theme }) => {
+  const avatar = theme ? darkImg : lightImg;
   const iconsStyles =
     "cursor-pointer rounded-full p-3 shadow-md shadow-gray-500 dark:shadow-orange-200 duration-300 ease-in hover:scale-110 sm:p-4";
   return (
