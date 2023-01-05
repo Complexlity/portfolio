@@ -1,6 +1,5 @@
 import Head from "next/head";
 import About from "../components/About";
-import About2 from "../components/About2";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
@@ -27,7 +26,7 @@ export default function Home() {
               {/* Hero Section  */}
               <Hero />
               {/* About section  */}
-              <About2 />
+              <About />
               {/* <About /> */}
               {/* Projects Section */}
               <Projects />
