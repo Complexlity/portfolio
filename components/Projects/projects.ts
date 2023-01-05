@@ -1,6 +1,12 @@
+import onlineStore from "./gifs/e-commerce-site.gif"
+import memoryGame from './gifs/memory-game.gif'
+import sketchApp from './gifs/etch-a-sketch.gif'
+import weatherApp from './gifs/weather-app.gif'
+import { StaticImageData } from "next/image"
+
 export interface ProjectsType {
     id: number
-    image?: string
+    image: StaticImageData
     title: string
     techologies: string[]
     description: string
@@ -10,43 +16,47 @@ export interface ProjectsType {
 const projects: ProjectsType[] = [
     {
         id: 1,
-        title: "Hello",
-        techologies: ["Javascript", "React", "Vite"],
+        title: "Online Store",
+        techologies: ["Typescript", "React", "Redux", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
         links: {
-            live: "https://nigeriascrabble.com/tournaments/",
-            code: "https://nigeriascrabble.com/tournaments/"
-        }
+            live: "https://e-commerce-site-alpha.vercel.app/",
+            code: "https://github.com/Complexlity/eCommerce-site"
+        },
+        image: onlineStore,
 
     }, {
         id: 2,
-        title: "Hello",
-        techologies: ["Javascript", "React", "Vite"],
+        title: "Memory Game",
+        techologies: ["React", "Framer Motion", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
         links: {
-            live: "https://nigeriascrabble.com/tournaments/",
-            code: "https://nigeriascrabble.com/tournaments/"
-        }
+            live: "https://complexlity-memory-game.netlify.app/",
+            code: "https://github.com/Complexlity/memory-game"
+        },
+        image: memoryGame,
 
     }, {
         id: 3,
-        title: "Hello",
-        techologies: ["Javascript", "React", "Vite"],
+        title: "Sketch Application",
+        techologies: ["Javascript", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
         links: {
-            live: "https://nigeriascrabble.com/tournaments/",
-            code: "https://nigeriascrabble.com/tournaments/"
-        }
+            live: "https://complexlity-etch-a-sketch.netlify.app/",
+            code: "https://github.com/Complexlity/Etch-A-Sketch"
+        },
+        image: sketchApp,
 
     }, {
         id: 4,
-        title: "Hello",
-        techologies: ["Javascript", "React", "Vite"],
+        title: "Weather App",
+        techologies: ["Javascript", "TailwindCSS", "API"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
         links: {
-            live: "https://nigeriascrabble.com/tournaments/",
-            code: "https://nigeriascrabble.com/tournaments/"
-        }
+            live: "https://complexlity-weather-app.netlify.app/",
+            code: "https://github.com/Complexlity/weather-app"
+        },
+        image: weatherApp,
 
     },
 ]

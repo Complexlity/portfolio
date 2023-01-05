@@ -30,19 +30,14 @@ const Card: FC<CardsProps> = ({ card }) => {
         </h1>
         <div className="flex flex-wrap gap-2 text-sm">
           {card.techologies.map((value) => (
-            <Button key={uniqid()} text={value.toUpperCase()} />
+            <Button
+              key={uniqid()}
+              text={value}
+              styles={"rounded-full md:text-[.5rem] text-[.5rem]"}
+            />
           ))}
         </div>
         <p className="dark:text-gray-200">{card.description}</p>
-        {/* <div className="mt-2 flex justify-center gap-8">
-          <Link href={card.links.live}>
-            <Button text="LIVE" color="green" />
-          </Link>
-          <Link href={card.links.code}>
-            <Button text="CODE" color="orange" />
-          </Link>
-        </div> */}
-
         <div className="absolute inset-0  hidden items-center justify-center gap-8 bg-gradient-to-r from-blue-700/95 to-sky-800/95 group-hover:flex dark:from-green-600/95 dark:to-cyan-900/95">
           <Link href={card.links.live}>
             <TbWorld

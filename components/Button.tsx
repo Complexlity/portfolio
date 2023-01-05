@@ -12,7 +12,7 @@ const Button: FC<Props> = ({ text, color, width, styles }) => {
   return (
     <button
       style={style}
-      className={`prose rounded-[4px] bg-primary py-1 px-[.65rem] text-xs text-gray-100 dark:bg-orange-300 dark:text-gray-900  md:text-sm md:tracking-wide ${styles}`}
+      className={` bg-primary  px-2  text-gray-100 dark:bg-orange-300 dark:text-gray-900   md:tracking-wide ${styles}`}
     >
       {text}
     </button>
