@@ -24,7 +24,7 @@ const generateEmailContent = (data: formValues) => {
     ""
   );
   const htmlData = Object.entries(data).reduce((str, [key, val]) => {
-    return (str += `<h3 class="form-heading" align="left">${CONTACT_MESSAGE_FIELDS[key as keyof formValues]}</h3><p class="form-answer" align="left">${val}</p>`);
+    return (str += `<h3 class="form-heading" font-weight="bold" margin-bottom="5px" align="left">${CONTACT_MESSAGE_FIELDS[key as keyof formValues]}</h3><p class="form-answer" align="left">${val}</p>`);
   }, "");
 
   return {
