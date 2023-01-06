@@ -18,11 +18,11 @@ const Contact = () => {
           cols={30}
           rows={5}
         ></textarea>
-        <div className=" text-center">
+        <div className="mx-auto w-full max-w-[400px] text-center">
           <Button
             text="Send Message"
             styles={
-              "w-full max-w-[400px] py-[.8rem] hover:dark:bg-orange-500 uppercase rounded-[2rem]  md:text-md`"
+              "w-full py-[.8rem] hover:dark:bg-orange-500 uppercase rounded-[2rem]  md:text-md`"
             }
           />
         </div>
