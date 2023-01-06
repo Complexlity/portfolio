@@ -5,7 +5,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
-import { useThemeContext } from "../pages/Contexts/ThemeContext";
+import { useThemeContext } from "../Contexts/ThemeContext";
 
 const Hero = () => {
   const theme = useThemeContext().darkMode;
