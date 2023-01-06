@@ -4,6 +4,7 @@ import sketchApp from './gifs/etch-a-sketch.gif'
 import weatherApp from './gifs/weather-app.gif'
 import resumeBuilder from './gifs/resume-builder.gif'
 import { StaticImageData } from "next/image"
+import portfolio from "./gifs/portfolio.gif"
 
 export interface ProjectsType {
     id: number
@@ -49,7 +50,7 @@ const projects: ProjectsType[] = [
         image: resumeBuilder,
 
     }, {
-        id: 4,
+        id: 5,
         title: "Sketch Application",
         techologies: ["Javascript", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
@@ -60,7 +61,7 @@ const projects: ProjectsType[] = [
         image: sketchApp,
 
     }, {
-        id: 5,
+        id: 6,
         title: "Weather App",
         techologies: ["Javascript", "TailwindCSS", "API"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
