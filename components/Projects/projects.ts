@@ -39,7 +39,7 @@ const projects: ProjectsType[] = [
         image: onlineStore,
 
     }, {
-        id: 2,
+        id: 3,
         title: "Memory Game",
         techologies: ["React", "Framer Motion", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",

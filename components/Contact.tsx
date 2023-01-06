@@ -1,12 +1,23 @@
+import { FormEvent, useState } from "react";
+import { sendContactForm } from "../util/sendForm";
 import Button from "./Button";
 
 const Contact = () => {
+  const [value, setValues] = useState({});
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    console.log("I was submitted");
+    let Value = await sendContactForm("Hello");
+    let result = await Value.json();
+    console.log(result.name);
+  }
+
   return (
     <section id="contact" className=" mt-8 grid px-3 ">
       <h2 className="contact-me mb-6 text-xl uppercase tracking-widest text-primary dark:text-orange-300 ">
         Connect with me
       </h2>
-      <form className="myForm mx-auto  grid w-full">
+      <form onSubmit={onSubmit} className="myForm mx-auto  grid w-full">
         <input className="" type="text" id="name" placeholder="Name" required />
         <input className="" type="email" placeholder="Email" />
         <input className="" type="text" placeholder="Subject" />
