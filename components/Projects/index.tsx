@@ -36,7 +36,7 @@ const Projects = () => {
         <Button
           text={buttonText}
           styles={
-            "w-full max-w-[400px] py-[.8rem] hover:dark:bg-orange-500 mt-4 uppercase rounded-[.5rem] md:text-md mx-auto"
+            "w-full max-w-[400px] py-[.8rem] hover:dark:bg-orange-500 mt-4 uppercase rounded-[1.8rem] md:text-md mx-auto"
           }
         />
       </a>

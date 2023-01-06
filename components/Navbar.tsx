@@ -4,7 +4,7 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
 
 import Image from "next/image";
-import { useThemeContext } from "../pages/Contexts/ThemeContext";
+import { useThemeContext } from "../Contexts/ThemeContext";
 
 interface Props {
   darkTheme: boolean;
