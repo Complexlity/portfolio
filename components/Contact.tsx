@@ -22,7 +22,7 @@ const Contact = () => {
     e.preventDefault();
     let value = await sendContactForm(values);
     let res = await value.json();
-    console.log(res);
+    alert(res.message);
   }
   function updateValues(item: number, newValue: string) {
     switch (item) {
@@ -74,6 +74,7 @@ const Contact = () => {
           type="email"
           placeholder="Email"
           value={values.email}
+          required
         />
         <input
           onChange={(e) => updateValues(2, e.target?.value)}
@@ -81,6 +82,7 @@ const Contact = () => {
           type="text"
           placeholder="Subject"
           value={values.subject}
+          required
         />
         <textarea
           onChange={(e) => updateValues(3, e.target?.value)}
@@ -91,6 +93,7 @@ const Contact = () => {
           cols={30}
           rows={5}
           value={values.message}
+          required
         ></textarea>
         <div className="mx-auto w-full max-w-[400px] text-center">
           <Button
