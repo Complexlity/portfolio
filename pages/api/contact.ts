@@ -1,15 +1,19 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { validateHeaderValue } from 'http'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
-  name: string
+  message: string
 }
 
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  console.log(req.body)
-  res.status(200).json({ name: 'John Doe' }
-  )
+  if (req.method == "POST") {
+    const data = req.body
+    if (!data.name || !data.email || !data.subject || !data.message)
+      return res.status(400).json({ message: "Bad request" })
+  }
+  return res.status(400).json({ message: "Bad request" })
 }
