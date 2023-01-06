@@ -23,6 +23,7 @@ const Contact = () => {
     let value = await sendContactForm(values);
     let res = await value.json();
     alert(res.message);
+    setValues(emptyformValues);
   }
   function updateValues(item: number, newValue: string) {
     switch (item) {
