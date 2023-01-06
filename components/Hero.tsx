@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="grid gap-3 px-1 text-center">
         <div className="font-raleway text-3xl font-bold text-gray-600 dark:text-gray-200 md:text-4xl lg:text-5xl">
           <h1 className="mb-2 sm:mb-4">
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <span className="text-primary dark:text-orange-300 ">
               Complexlity
             </span>

@@ -17,5 +17,5 @@ module.exports = {
       raleway: ["raleway", "sans-serif"],
     },
   },
-  plugins: []
+  plugins: [],
 };
