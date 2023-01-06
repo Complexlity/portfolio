@@ -19,7 +19,7 @@ const projects: ProjectsType[] = [
     {
         id: 1,
         title: "Personal Portfolio",
-        techologies: ["Typescript", "React", "Redux", "TailwindCSS"],
+        techologies: ["NextJs", "Typescript", "Context API", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
         links: {
             live: "/",
