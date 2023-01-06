@@ -20,8 +20,9 @@ const Contact = () => {
   const [values, setValues] = useState<formValues>(emptyformValues);
   async function submitValues(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // let Value = await sendContactForm("Hello");
-    console.log(values);
+    let value = await sendContactForm(values);
+    let res = await value.json();
+    console.log(res);
   }
   function updateValues(item: number, newValue: string) {
     switch (item) {
