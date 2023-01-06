@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { sendContactForm } from "../util/sendForm";
+import { sendContactForm } from "../mail-files/sendForm";
 import Button from "./Button";
 
 export interface formValues {
@@ -20,10 +20,11 @@ const Contact = () => {
   const [values, setValues] = useState<formValues>(emptyformValues);
   async function submitValues(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    setValues(emptyformValues);
+
     let value = await sendContactForm(values);
     let res = await value.json();
     alert(res.message);
-    setValues(emptyformValues);
   }
   function updateValues(item: number, newValue: string) {
     switch (item) {
