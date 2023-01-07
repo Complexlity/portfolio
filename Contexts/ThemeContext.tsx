@@ -4,8 +4,9 @@ export type GlobalTheme = {
   darkMode: boolean;
   setDarkMode: (c: boolean) => void;
 };
+let theme = !!localStorage.getItem("darkTheme");
 const ThemeContext = createContext<GlobalTheme>({
-  darkMode: false,
+  darkMode: theme,
   setDarkMode: () => {},
 });
 
@@ -16,7 +17,11 @@ interface Props {
 export const useThemeContext = () => useContext(ThemeContext);
 
 const ThemeContextProvider = ({ children }: Props) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, updateDarkMode] = useState(false);
+  function setDarkMode() {
+    updateDarkMode(!darkMode);
+    localStorage.setItem("darkTheme", "yes");
+  }
 
   return (
     <ThemeContext.Provider value={{ darkMode, setDarkMode }}>

@@ -30,7 +30,7 @@ const projects: ProjectsType[] = [
     }, {
         id: 2,
         title: "Online Store",
-        techologies: ["Typescript", "ReactJs", "Redux", "TailwindCSS"],
+        techologies: ["ReactJs", "Typescript", "Redux", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
         links: {
             live: "https://e-commerce-site-alpha.vercel.app/",
