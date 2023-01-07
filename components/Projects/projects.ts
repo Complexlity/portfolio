@@ -19,7 +19,7 @@ const projects: ProjectsType[] = [
     {
         id: 1,
         title: "Personal Portfolio",
-        techologies: ["NextJs", "Typescript", "Context API", "TailwindCSS"],
+        techologies: ["NextJs", "Typescript", "Context API", "nodemailer", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
         links: {
             live: "/",
@@ -30,7 +30,7 @@ const projects: ProjectsType[] = [
     }, {
         id: 2,
         title: "Online Store",
-        techologies: ["Typescript", "React", "Redux", "TailwindCSS"],
+        techologies: ["Typescript", "ReactJs", "Redux", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
         links: {
             live: "https://e-commerce-site-alpha.vercel.app/",
@@ -41,7 +41,7 @@ const projects: ProjectsType[] = [
     }, {
         id: 3,
         title: "Memory Game",
-        techologies: ["React", "Framer Motion", "TailwindCSS"],
+        techologies: ["ReactJs", "Framer Motion", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
         links: {
             live: "https://complexlity-memory-game.netlify.app/",
@@ -52,7 +52,7 @@ const projects: ProjectsType[] = [
     }, {
         id: 4,
         title: "Resume Builder",
-        techologies: ["ReactJs", "TailwindCSS"],
+        techologies: ["ReactJs", "API", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
         links: {
             live: "https://complexlity-resume-builder.netlify.app/",
@@ -60,19 +60,9 @@ const projects: ProjectsType[] = [
         },
         image: resumeBuilder,
 
-    }, {
+    },
+    {
         id: 5,
-        title: "Sketch Application",
-        techologies: ["Javascript", "TailwindCSS"],
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
-        links: {
-            live: "https://complexlity-etch-a-sketch.netlify.app/",
-            code: "https://github.com/Complexlity/Etch-A-Sketch"
-        },
-        image: sketchApp,
-
-    }, {
-        id: 6,
         title: "Weather App",
         techologies: ["Javascript", "TailwindCSS", "API"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
@@ -81,6 +71,18 @@ const projects: ProjectsType[] = [
             code: "https://github.com/Complexlity/weather-app"
         },
         image: weatherApp,
+
+    },
+    {
+        id: 6,
+        title: "Sketch Application",
+        techologies: ["Javascript", "TailwindCSS"],
+        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
+        links: {
+            live: "https://complexlity-etch-a-sketch.netlify.app/",
+            code: "https://github.com/Complexlity/Etch-A-Sketch"
+        },
+        image: sketchApp,
 
     },
 ]
