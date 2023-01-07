@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <div className={darkClass}>
         <div className="dark:bg-darkBg">
-          <div className={" mx-auto w-full max-w-[80rem] px-8  pb-4  "}>
+          <div className={" mx-auto w-full max-w-[80rem] px-4 pb-4  md:px-8  "}>
             <Navbar />
             <div className=" mx-auto grid">
               {/* Hero Section  */}
