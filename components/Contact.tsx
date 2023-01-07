@@ -18,14 +18,19 @@ const emptyformValues: formValues = {
 
 const Contact = () => {
   const [values, setValues] = useState<formValues>(emptyformValues);
+  const [loading, setLoading] = useState<boolean>(false);
   async function submitValues(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setValues(emptyformValues);
-
+    if (!values.name || !values.email || !values.subject || !values.message)
+      return;
+    setLoading(true);
     let value = await sendContactForm(values);
     let res = await value.json();
+    setLoading(false);
     alert(res.message);
   }
+
   function updateValues(item: number, newValue: string) {
     switch (item) {
       case 0:
@@ -98,12 +103,20 @@ const Contact = () => {
           required
         ></textarea>
         <div className="mx-auto w-full max-w-[400px] text-center">
-          <Button
-            text="Send Message"
-            styles={
-              "w-full py-[.8rem] hover:dark:bg-orange-500 uppercase rounded-[2rem]  md:text-md`"
-            }
-          />
+          {!loading ? (
+            <button className="md:text-md w-full   rounded-[2rem] bg-primary px-2 py-[.8rem] uppercase  text-gray-100 hover:bg-primaryLight dark:bg-orange-300 dark:text-[80%] dark:font-semibold dark:text-black hover:dark:bg-orange-500   md:tracking-wide">
+              {" "}
+              Send Message
+            </button>
+          ) : (
+            <button className="md:text-md w-full   rounded-[2rem] bg-primaryLight px-2 py-[.8rem] uppercase  text-gray-100 hover:bg-primaryLight dark:bg-orange-300 dark:text-[80%] dark:font-semibold dark:text-black hover:dark:bg-orange-500   md:tracking-wide">
+              {" "}
+              <span className="loader ld-ext-right running flex items-center justify-center">
+                <span>Sending</span>{" "}
+                <span className="ld ld-ring ld-spin ml-2"></span>{" "}
+              </span>
+            </button>
+          )}
         </div>
       </form>
     </section>
