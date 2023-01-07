@@ -1,6 +1,5 @@
 import { FormEvent, useState } from "react";
 import { sendContactForm } from "../mail-files/sendForm";
-import Button from "./Button";
 
 export interface formValues {
   name: string;

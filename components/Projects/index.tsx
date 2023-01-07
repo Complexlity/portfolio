@@ -1,6 +1,5 @@
 import projects from "./projects";
 import Card from "./Card";
-import Button from "../Button";
 import { AnchorHTMLAttributes, DetailedHTMLProps, useState } from "react";
 
 const Projects = () => {
@@ -33,12 +32,9 @@ const Projects = () => {
         ))}
       </div>
       <a onClick={showProjects} className="pointer grid">
-        <Button
-          text={buttonText}
-          styles={
-            "w-full max-w-[400px] py-[.8rem] hover:dark:bg-orange-500 mt-4 uppercase rounded-[1.8rem] md:text-md mx-auto"
-          }
-        />
+        <button className="md:text-md mx-auto  mt-4 w-full max-w-[400px] rounded-[1.8rem] bg-primary px-2   py-[.8rem] uppercase text-gray-100 hover:bg-primaryLight dark:bg-orange-300 dark:text-[80%] dark:font-semibold dark:text-black hover:dark:bg-orange-500 md:tracking-wide">
+          {buttonText}
+        </button>
       </a>
     </section>
   );

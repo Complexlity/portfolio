@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import projectImg from "../../assets/hero-image.png";
-import Button from "../Button";
 import { ProjectsType } from "./projects";
 import uniqid from "uniqid";
 import { TbWorld } from "react-icons/tb";
@@ -31,11 +30,12 @@ const Card: FC<CardsProps> = ({ card }) => {
         </h1>
         <div className="flex flex-wrap gap-2 text-sm">
           {card.techologies.map((value) => (
-            <Button
+            <button
               key={uniqid()}
-              text={value}
-              styles={"rounded-full md:text-[.5rem] text-[.5rem]"}
-            />
+              className="rounded-full bg-primary  px-2 text-[.5rem] text-gray-100 hover:bg-primaryLight dark:bg-orange-300 dark:text-[80%]   dark:font-semibold dark:text-black md:text-[.5rem] md:tracking-wide"
+            >
+              {value}
+            </button>
           ))}
         </div>
         <p className="dark:text-gray-200">{card.description}</p>
