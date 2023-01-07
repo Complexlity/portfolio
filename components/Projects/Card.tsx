@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import projectImg from "../../assets/hero-image.png";
 import { ProjectsType } from "./projects";
 import uniqid from "uniqid";
 import { TbWorld } from "react-icons/tb";
@@ -18,7 +17,7 @@ const Card: FC<CardsProps> = ({ card }) => {
         <Image
           unoptimized={true}
           className="w-full"
-          src={card.image || projectImg}
+          src={card.image}
           alt="projectImage"
           width={200}
           height={400}
