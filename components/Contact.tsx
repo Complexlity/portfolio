@@ -109,7 +109,10 @@ const Contact = () => {
               Send Message
             </button>
           ) : (
-            <button className="md:text-md w-full   rounded-[2rem] bg-primaryLight px-2 py-[.8rem] uppercase  text-gray-100 hover:bg-primaryLight dark:bg-orange-300 dark:text-[80%] dark:font-semibold dark:text-black hover:dark:bg-orange-500   md:tracking-wide">
+            <button
+              disabled
+              className="md:text-md w-full   rounded-[2rem] bg-primaryLight px-2 py-[.8rem] uppercase  text-gray-100 hover:bg-primaryLight dark:bg-orange-300 dark:text-[80%] dark:font-semibold dark:text-black hover:dark:bg-orange-500   md:tracking-wide"
+            >
               {" "}
               <span className="loader ld-ext-right running flex items-center justify-center">
                 <span>Sending</span>{" "}
