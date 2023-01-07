@@ -2,16 +2,12 @@ import { FC } from "react";
 
 interface Props {
   text: string;
-  color?: string;
-  width?: string;
   styles?: string;
 }
 
-const Button: FC<Props> = ({ text, color, width, styles }) => {
-  const style = { backgroundColor: color || "", width: width || "" } || "";
+const Button: FC<Props> = ({ text, styles }) => {
   return (
     <button
-      style={style}
       className={`bg-primary px-2  text-gray-100 hover:bg-primaryLight dark:bg-orange-300 dark:text-[80%] dark:font-semibold dark:text-black   md:tracking-wide ${styles}`}
     >
       {text}
