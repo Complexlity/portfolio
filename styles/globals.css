@@ -19,6 +19,9 @@
   section#about {
     @apply sm:scroll-mt-16 lg:scroll-mt-8;
   }
+  section#skills {
+    @apply h-screen;
+  }
 }
 
 html {

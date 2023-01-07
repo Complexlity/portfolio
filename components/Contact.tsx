@@ -18,14 +18,20 @@ const emptyformValues: formValues = {
 const Contact = () => {
   const [values, setValues] = useState<formValues>(emptyformValues);
   const [loading, setLoading] = useState<boolean>(false);
+
   async function submitValues(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setValues(emptyformValues);
     if (!values.name || !values.email || !values.subject || !values.message)
       return;
+    setValues(emptyformValues);
     setLoading(true);
-    let value = await sendContactForm(values);
-    let res = await value.json();
+    let res;
+    try {
+      let value = await sendContactForm(values);
+      res = await value.json();
+    } catch (error) {
+      res = { messsage: "Failed: Could not connect" };
+    }
     setLoading(false);
     alert(res.message);
   }
