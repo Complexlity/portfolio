@@ -42,13 +42,13 @@ const Card: FC<CardsProps> = ({ card }) => {
         <p className="dark:text-gray-200">{card.description}</p>
 
         <div className="absolute inset-0  hidden items-center justify-center gap-8 bg-gradient-to-r from-blue-700/95 to-sky-800/95 group-hover:flex dark:from-green-600/95 dark:to-cyan-900/95">
-          <Link href={card.links.live}>
+          <Link href={card.links.live} target={"_blank"}>
             <TbWorld
               className="w-full cursor-pointer text-gray-800 dark:text-gray-300"
               size={128}
             />
           </Link>
-          <Link href={card.links.code}>
+          <Link href={card.links.code} target={"_blank"}>
             <AiFillGithub
               className="w-full cursor-pointer text-gray-800 dark:text-gray-300"
               size={128}
