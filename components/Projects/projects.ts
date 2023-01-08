@@ -33,7 +33,7 @@ const projects: ProjectsType[] = [
         techologies: ["ReactJs", "Typescript", "Redux", "TailwindCSS"],
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptate numquam possimus eaque explicabo omnis velit, nesciunt aliquid beatae dolores",
         links: {
-            live: "https://e-commerce-site-alpha.vercel.app/",
+            live: "https://complexlity-ecommerce-site.vercel.app/",
             code: "https://github.com/Complexlity/eCommerce-site"
         },
         image: onlineStore,
