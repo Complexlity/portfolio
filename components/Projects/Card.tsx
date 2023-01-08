@@ -12,11 +12,11 @@ interface CardsProps {
 
 const Card: FC<CardsProps> = ({ card }) => {
   return (
-    <div className="group grid overflow-hidden rounded-lg shadow-md duration-75 ease-in-out hover:scale-[101%] dark:shadow-orange-800">
+    <div className="group flex flex-col overflow-hidden rounded-lg shadow-md duration-75 ease-in-out hover:scale-[101%] dark:shadow-orange-800">
       <div>
         <Image
           unoptimized={true}
-          className="w-full"
+          className="w-full object-contain"
           src={card.image}
           alt="projectImage"
           width={200}
@@ -24,8 +24,8 @@ const Card: FC<CardsProps> = ({ card }) => {
           priority={true}
         />
       </div>
-      <div className="projectGrid grid gap-2 py-4 px-6">
-        <h1 className="text-xl font-semibold uppercase dark:text-gray-200">
+      <div className="flex flex-1 flex-col gap-2 py-4 px-6">
+        <h1 className="text-lg font-semibold uppercase dark:text-gray-200 lg:text-xl">
           {card.title}
         </h1>
         <div className="flex flex-wrap gap-2 text-sm">
@@ -38,7 +38,7 @@ const Card: FC<CardsProps> = ({ card }) => {
             </button>
           ))}
         </div>
-        <p className="dark:text-gray-200">{card.description}</p>
+        <p className=" dark:text-gray-200">{card.description}</p>
 
         <div className="absolute inset-0  hidden items-center justify-center gap-8 bg-gradient-to-r from-blue-700/95 to-sky-800/95 group-hover:flex dark:from-green-600/95 dark:to-cyan-900/95">
           <Link href={card.links.live} target={"_blank"}>
