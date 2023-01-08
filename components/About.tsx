@@ -18,22 +18,24 @@ const About = () => {
           >
             <p className="py-2 text-gray-600 dark:text-gray-100">
               I specialize in building mobile responsive front-end UI
-              applications that connect with API's and other backend
-              technologies. I'm enthusiastic about learning new technology and
-              recognize that there are alternative ways to do a task. Using
-              HTML, CSS, Javascript, and React to build front-end applications
-              is where I excel, but I am a quick learner and can pick up new
-              tech stacks as needed. I think that using the best tool for the
-              job, rather than sticking to one particular language, is what
-              makes a great developer.
+              applications that connect with API's and other backend My primary
+              skills involve using HTML, CSS, JavaScript (or TypeScript),
+              ReactJs(as well as NextJs as needed) to build good and scalable
+              applications and while also inculcating any necessary technology
+              required to bring ideas to life technologies. I'm enthusiastic
+              about learning new technology and I am a quick learner who can
+              always pick new tech stacks as needed.
             </p>
             <p className="py-2 text-gray-600 dark:text-gray-100">
-              I started web developement in 2013 managing multiple e-commerce
-              websites on CMS platforms such as WordPress, BigCommerce, and
-              Shopify. I have experience working directly with clients and
-              taking mock wireframes all the way to deployed applications. In my
-              spare time I run Code Commerce, a Youtube channel where I teach
-              web developement and various front-end technologies.
+              I started web developement in 2021, and have worked on building
+              web pages and also generating html templates using JOOMLA CMS
+              before I got interested in creating more interactive, custom and
+              beautiful web pages and this is when I learnt to build on the web
+              using JavaScript and ReactJs. <br></br>I have experience working
+              directly with clients and ensure that every assignment is carried
+              out as specified. <br></br> In my spare time, I play some{" "}
+              <a href="https://lichess.org/Complexlity">Chess</a> as well as
+              write some <a href="openreplay.com">technical articles </a>
             </p>
           </div>
         </div>
