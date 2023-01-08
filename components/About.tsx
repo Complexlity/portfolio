@@ -18,14 +18,14 @@ const About = () => {
           >
             <p className="py-2 text-gray-600 dark:text-gray-100">
               I specialize in building mobile responsive front-end UI
-              applications that connect with API&apos;s and other backend
-              technologies. I&apos;m passionate about learning new technologies
-              and understand there is more than one way to accomplish a task.
-              Though I am most proficient in building front-end applications
-              using HTML, CSS, Javascript, and React, I am a quick learner and
-              can pick up new tech stacks as needed. I believe that being a
-              great developer is not using one specific language, but choosing
-              the best tool for the job.
+              applications that connect with API's and other backend
+              technologies. I'm enthusiastic about learning new technology and
+              recognize that there are alternative ways to do a task. Using
+              HTML, CSS, Javascript, and React to build front-end applications
+              is where I excel, but I am a quick learner and can pick up new
+              tech stacks as needed. I think that using the best tool for the
+              job, rather than sticking to one particular language, is what
+              makes a great developer.
             </p>
             <p className="py-2 text-gray-600 dark:text-gray-100">
               I started web developement in 2013 managing multiple e-commerce

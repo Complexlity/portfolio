@@ -37,8 +37,8 @@ const Hero = () => {
           <h1>A Front-End Web Developer</h1>
         </div>
         <p className="mx-auto w-full max-w-[45ch] md:m-0 md:max-w-[65ch]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          dignissimos libero qui porro esse molestiae!
+          I’m focused on building responsive and aesthetic front-end web
+          applications and integrating APIs and back-end technologies .
         </p>
         <div className="grid justify-center">
           <div className="bg- mx-auto flex w-full content-center items-center gap-4 py-4 md:gap-6">
