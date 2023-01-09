@@ -7,13 +7,13 @@ interface Props {
 
 const Card: FC<Props> = ({ item }) => {
   return (
-    <div className="mygrid mt-4 grid h-16 w-16  md:h-24 md:w-24">
+    <div className="mygrid mt-4 flex flex-col gap-2 ">
       <Image
-        className="h-full w-full object-cover"
+        className="h-full w-full object-contain"
         src={item.image}
         alt={item.title}
       />
-      <p className=" text-center text-[3vw] dark:text-gray-200 md:text-xl">
+      <p className=" text-center font-roboto text-[3vw] dark:text-gray-200 md:text-xl">
         {item.title}
       </p>
     </div>

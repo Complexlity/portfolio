@@ -15,6 +15,7 @@ module.exports = {
     },
     fontFamily: {
       raleway: ["raleway", "sans-serif"],
+      roboto: ["Roboto", "sans-serif"],
     },
   },
   plugins: [],

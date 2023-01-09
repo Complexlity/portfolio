@@ -12,7 +12,7 @@ const Skills = () => {
         What I Can Do
       </h3>
 
-      <div className="grid grid-cols-3 gap-8 md:grid-cols-5 md:gap-12">
+      <div className="grid grid-cols-3 gap-8 md:grid-cols-4 md:gap-12 lg:grid-cols-5">
         {skills.map((skill) => (
           <Card key={uniqid()} item={skill} />
         ))}
