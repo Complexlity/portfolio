@@ -42,7 +42,7 @@ const Navbar = () => {
   };
   return (
     <nav
-      className={`${navLook} sticky top-0 z-10 flex-col justify-between py-2 dark:text-gray-100 md:flex md:flex-row md:py-3 md:py-4`}
+      className={`${navLook} sticky top-0 z-10 flex-col justify-between py-2 font-raleway dark:text-gray-100 md:flex md:flex-row md:py-3 md:py-4`}
     >
       <div className="flex items-center justify-between">
         <div className="w-10 md:w-12">
