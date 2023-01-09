@@ -34,14 +34,17 @@ const About = () => {
               using JavaScript and ReactJs. <br></br>I have experience working
               directly with clients and ensure that every assignment is carried
               out as specified. <br></br> In my spare time, I play some{" "}
-              <a href="https://lichess.org/Complexlity">Chess</a> as well as
-              write some <a href="openreplay.com">technical articles </a>
+              <a
+                href="https://lichess.org/Complexlity"
+                target={"_blank"}
+                className="text-primary hover:underline dark:text-orange-300"
+              >
+                chess
+              </a>{" "}
+              as well as write <a href="openreplay.com">technical articles </a>
             </p>
           </div>
         </div>
-        {/* <div className="m-auto flex h-auto w-full items-center justify-center rounded-xl p-4 shadow-xl shadow-gray-400 duration-300 ease-in hover:scale-105">
-          <Image src={AboutImg} className="rounded-xl" alt="/" />
-        </div> */}
       </div>
     </section>
   );
