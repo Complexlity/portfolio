@@ -37,7 +37,7 @@ const Hero = () => {
           <h1>A Front-End Web Developer</h1>
         </div>
         <p className="mx-auto w-full max-w-[45ch] md:m-0 md:max-w-[65ch]">
-          I’m focused on building responsive and accessiblity compliant web
+          I am focused on building responsive and accessiblity compliant web
           applications and integrating APIs and back-end technologies .
         </p>
         <div className="grid justify-center">
