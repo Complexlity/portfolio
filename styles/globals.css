@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://cdn.jsdelivr.net/gh/loadingio/ldbutton@v1.0.1/dist/ldbtn.min.css");
-@import url("https://cdn.jsdelivr.net/gh/loadingio/loading.css@v2.0.0/dist/loading.css");
-
 @layer base {
   body {
     @apply bg-[#ecf0f3] text-gray-700 dark:bg-darkBg dark:text-gray-300;
