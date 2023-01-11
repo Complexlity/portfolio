@@ -52,7 +52,7 @@ export default async function handler(
       })
       return res.status(200).json({ message: "Success: Thank You For Contacting Complexlity", success: true })
     } catch (error: any) {
-      return res.status(400).json({ message: `Failed: ${error.message}` })
+      return res.status(400).json({ message: `Failed: Something Went Wrong. Please Try Reaching Me On Socials` })
 
     }
   }
