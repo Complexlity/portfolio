@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const About = () => {
   return (
     <section
@@ -34,13 +36,13 @@ const About = () => {
               using JavaScript and ReactJs. <br></br>I have experience working
               directly with clients and ensure that every assignment is carried
               out as specified. <br></br> In my spare time, I play some{" "}
-              <a
+              <Link
                 href="https://lichess.org/Complexlity"
                 target={"_blank"}
                 className="text-primary hover:underline dark:text-orange-300"
               >
                 chess
-              </a>{" "}
+              </Link>{" "}
               as well as write <a href="openreplay.com">technical articles </a>
             </p>
           </div>
