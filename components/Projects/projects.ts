@@ -41,7 +41,7 @@ const projects: ProjectsType[] = [
     }, {
         id: 3,
         title: "Memory Game",
-        techologies: ["ReactJs", "Framer Motion", "TailwindCSS"],
+        techologies: ["ReactJs", "firebase", "Framer Motion", "TailwindCSS"],
         description: "This application tends to test retentive abilities. I built this to solidify my knowledge of key react concepts like lifecycle of components and state. It was also built using framer motion to add animations when the card components mount",
         links: {
             live: "https://complexlity-memory-game.netlify.app/",
