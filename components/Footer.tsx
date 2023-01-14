@@ -15,7 +15,7 @@ const Footer = () => {
           Developer
         </p>
         <div className="flex gap-4 sm:gap-8 ">
-          <Link href="https://www.github.com">
+          <Link href="https://www.github.com/Complexlity">
             <AiFillGithub
               className="h-4 w-4 text-gray-400 dark:text-amber-100 sm:h-8 sm:w-8"
               color=""
