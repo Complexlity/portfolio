@@ -6,11 +6,6 @@ import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
 import Image from "next/image";
 import { useThemeContext } from "../Contexts/ThemeContext";
 
-interface Props {
-  darkTheme: boolean;
-  setDarkTheme: Dispatch<SetStateAction<boolean>>;
-}
-
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const [shadow, setShadow] = useState(false);

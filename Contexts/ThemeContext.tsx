@@ -1,4 +1,4 @@
-import { useState, useEffect, createContext, FC, useContext } from "react";
+import { useState, createContext, useContext } from "react";
 
 export type GlobalTheme = {
   darkMode: boolean;
