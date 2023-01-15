@@ -1,6 +1,6 @@
 import projects from "./projects";
 import Card from "./Card";
-import { AnchorHTMLAttributes, DetailedHTMLProps, useState } from "react";
+import { useState } from "react";
 
 const Projects = () => {
   const shownProjects = projects.slice(0, 3);
