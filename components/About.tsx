@@ -1,5 +1,7 @@
+// Link component for routing in next js. See https://nextjs.org/docs/api-reference/next/link
 import Link from "next/link";
 
+// This components outputs the about section
 const About = () => {
   return (
     <section

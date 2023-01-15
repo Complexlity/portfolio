@@ -1,7 +1,13 @@
+// Link component for routing in next js. See https://nextjs.org/docs/api-reference/next/link
 import Link from "next/link";
+
+// Github and twitter icons. See https://react-icons.github.io/react-icons/
 import { AiFillGithub } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
+
+// This function outputs the footer element
 const Footer = () => {
+  // Creates the year value dynamically
   const year = new Date().getFullYear();
   return (
     <div className="mt-8 px-3">

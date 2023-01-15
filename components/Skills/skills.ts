@@ -1,3 +1,4 @@
+// All images used in the skills section
 import javascriptImg from "./icons/javascript.svg"
 import gitImg from "./icons/git.svg"
 import reactjsImg from "./icons/reactjs.svg"
@@ -11,7 +12,7 @@ import firebaseImg from "./icons/firebase.png"
 import typescriptImg from "./icons/typescript.png"
 import a11yImg from "./icons/W3CAG.png"
 
-
+// An array made up by the images and theiir titles
 export const skills = [
 
     {

@@ -1,15 +1,26 @@
+// Custom next js image components for optimization. See https://nextjs.org/docs/api-reference/next/image
 import Image from "next/image";
+
+// Custom next js components for routing. See https://nextjs.org/docs/api-reference/next/link
 import Link from "next/link";
-import { FC } from "react";
-import { ProjectsType } from "./projects";
+
+// Typescript interfaces
+import { FC } from "react"; // Functional component interface. See
+import { ProjectsType } from "./projects"; // Custom projects interfaces
+
+// This package creates a unique string which I used as key in react map. See https://www.npmjs.com/package/uniqid
 import uniqid from "uniqid";
+
+// Live and Code icons. See https://react-icons.github.io/react-icons/
 import { TbWorld } from "react-icons/tb";
 import { AiFillGithub } from "react-icons/ai";
 
+// Props interface
 interface CardsProps {
   card: ProjectsType;
 }
 
+// This takes in a project and outputs a card for it. Consisting of the image, tools and description
 const Card: FC<CardsProps> = ({ card }) => {
   return (
     <div className="group flex flex-col overflow-hidden rounded-lg shadow-md duration-75 ease-in-out hover:scale-[101%] dark:shadow-orange-800">

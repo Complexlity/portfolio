@@ -1,11 +1,16 @@
+// All used gifs in the projects section
 import onlineStore from "./gifs/e-commerce-site.gif"
 import memoryGame from './gifs/memory-game.gif'
 import sketchApp from './gifs/etch-a-sketch.gif'
 import weatherApp from './gifs/weather-app.gif'
 import resumeBuilder from './gifs/resume-builder.gif'
-import { StaticImageData } from "next/image"
 import portfolio from "./gifs/portfolio.gif"
 
+// Image component for the nextjs Image component. See Card.tsx for the <Image /> component in use
+import { StaticImageData } from "next/image"
+
+
+// Interface of what a project object should have
 export interface ProjectsType {
     id: number
     image: StaticImageData

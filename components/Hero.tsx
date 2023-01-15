@@ -1,15 +1,30 @@
-import Image from "next/image";
+// Custom next js image components for optimization as well as image interface. See https://nextjs.org/docs/api-reference/next/image
+import Image, { StaticImageData } from "next/image";
+
+// Custom next js components for routing. See https://nextjs.org/docs/api-reference/next/link
+import Link from "next/link";
+
+// Hero images which are shown depending on the current theme
 import darkImg from "../assets/darkImage.png";
 import lightImg from "../assets/lightImage.png";
+
+// All social icons. See https://react-icons.github.io/react-icons/
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
+
+// Custom context hook to read global state data. See /Contexts/ThemeContext.tsx for more information
 import { useThemeContext } from "../Contexts/ThemeContext";
 
+// Outputs all data in the hero section including the images, social links and texts
 const Hero = () => {
-  const theme = useThemeContext().darkMode;
-  const avatar = theme ? darkImg : lightImg;
+  // Get the current them from the global state
+  const theme: boolean = useThemeContext().darkMode;
+
+  // Set the avatar object based on the current theme value
+  const avatar: StaticImageData = theme ? darkImg : lightImg;
+
+  // Variable containing tailwind styles to avoid repetition
   const iconsStyles =
     "cursor-pointer rounded-full p-3 shadow-md shadow-gray-500 dark:shadow-orange-200 duration-300 ease-in hover:scale-110 sm:p-4";
   return (

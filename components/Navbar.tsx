@@ -1,25 +1,37 @@
-import complexIcon from "../assets/complex.png";
-import { Spin as Hamburger } from "hamburger-react";
+// React interfaces for context actions (first two) and hooks (last two)
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
-import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
 
+// C Logo Icon
+import complexIcon from "../assets/complex.png";
+
+// Custom next js image components for optimization. See https://nextjs.org/docs/api-reference/next/image
 import Image from "next/image";
+
+// The spin hamburger menu. See https://hamburger-react.netlify.app/ for more information
+import { Spin as Hamburger } from "hamburger-react";
+
+// Custom context hook to read global state data. See /Contexts/ThemeContext.tsx for more information
 import { useThemeContext } from "../Contexts/ThemeContext";
 
-interface Props {
-  darkTheme: boolean;
-  setDarkTheme: Dispatch<SetStateAction<boolean>>;
-}
+// Moon and sun icon used to toggle theme. See https://react-icons.github.io/react-icons/
+import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
 
+// This outputs the mobile or the desktop navbar depending on the width of the screen
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false);
-  const [shadow, setShadow] = useState(false);
-  const darkTheme = useThemeContext().darkMode;
+  // Initializes the state values
+  const [isOpen, setOpen] = useState(false); // Checks mobile menu open/close
+  const [shadow, setShadow] = useState(false); // Checks desktop menu bottom shadow when scrolling
+
+  // Gets the theme value as well as function to update the theme. See /Context/themeContext.tsx
+  const darkTheme: boolean = useThemeContext().darkMode;
   const setDarkTheme = useThemeContext().setDarkMode;
 
+  // Minimizes the update theme function for cleaner code in JSX element
   function toggleTheme() {
     setDarkTheme(!darkTheme);
   }
+
+  // Checks for the scroll position and adds the shadow to the desktop menu. It also closes the moblie menu when the user starts to scroll
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -32,14 +44,18 @@ const Navbar = () => {
     window.addEventListener("scroll", () => setOpen(false));
   }, []);
 
+  // TailwindCSS style depending on if the shadow state is true or false
   const navLook = shadow
     ? "dark:bg-darkBg bg-[#ecf0f3] shadow-primaryLight"
     : "";
+
+  // Handles the animation of the mobile menu
   const navTranslate = isOpen ? `0px` : `-20rem`;
   const animation = {
     transition: `all .5s ease-in-out`,
     transform: `translateY(${navTranslate})`,
   };
+
   return (
     <nav
       className={`${navLook} sticky top-0 z-10 flex-col justify-between py-2 font-raleway dark:text-gray-100 md:flex md:flex-row md:py-3 md:py-4`}
@@ -74,11 +90,15 @@ const Navbar = () => {
   );
 };
 
+// NavLink type definition
 type navlinks = {
   animation?: { transform: string; transition: string };
   mobile: boolean;
 };
 
+// This sub-component outputs a different style depending on whether it is on mobile or not.
+//It uses the mobile property to check for it
+// It also shows animation on mobile and not on desktop
 const NavLinks = ({ animation, mobile }: navlinks) => {
   const linkStyles = mobile
     ? `px-2 py-3  border-b-2 border-primary  dark:border-orange-400`

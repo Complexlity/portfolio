@@ -1,6 +1,10 @@
+// Form interface and React state hook
 import { FormEvent, useState } from "react";
+
+// Function to send the form data to the mail api. Seel /mail-files/sendForm.ts for more information
 import { sendContactForm } from "../mail-files/sendForm";
 
+// Interface of what the form submit values object should have
 export interface formValues {
   name: string;
   email: string;
@@ -8,6 +12,7 @@ export interface formValues {
   message: string;
 }
 
+// Blank form values object extending the form interface above
 const emptyformValues: formValues = {
   name: "",
   email: "",
@@ -15,27 +20,39 @@ const emptyformValues: formValues = {
   message: "",
 };
 
+// This component outputs the form on the dom as well as is responsible for sending the date to the necessary mail api route
 const Contact = () => {
+  // Initialize the state values
   const [values, setValues] = useState<formValues>(emptyformValues);
   const [loading, setLoading] = useState<boolean>(false);
 
+  // Function to send the form and return success or error
   async function submitValues(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    // Checks if any of the values are misssing. The minimal validation done here is because the data is not used in any backend operation but only to receive email messages
     if (!values.name || !values.email || !values.subject || !values.message)
       return;
+
+    // Updates the form values as well as shows the loading on the button
     setValues(emptyformValues);
     setLoading(true);
+
+    // Sends the form. Alerts error or success message
     let res;
     try {
       let value = await sendContactForm(values);
       res = await value.json();
     } catch (error) {
-      res = { messsage: "Failed: Could not connect" };
+      res = {
+        messsage: "Something went wrong. Please contact my Socials instead",
+      };
     }
     setLoading(false);
     alert(res.message);
   }
 
+  // Function to update the values state as the elements are entered. This could be done in the particular input element but I felt this was a cleaner way to go about it
   function updateValues(item: number, newValue: string) {
     switch (item) {
       case 0:

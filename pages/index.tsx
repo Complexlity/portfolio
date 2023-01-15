@@ -1,4 +1,7 @@
+// NextJs Head element to add title and meta attributes to the page
 import Head from "next/head";
+
+// Gets all the sections. See /Components for individual component information
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
@@ -6,6 +9,8 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+
+// Custom hook used to access the value of the current theme. See /Context/themeContext.tsx for more information
 import { useThemeContext } from "../Contexts/ThemeContext";
 
 export default function Home() {
