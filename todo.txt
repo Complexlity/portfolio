@@ -1,3 +1,0 @@
-Clean themeContext.tsx
-Clean Navbar.tsx
-Clean _app.tsx
