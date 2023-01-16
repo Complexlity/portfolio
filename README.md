@@ -12,6 +12,16 @@ My personal portfolio built using NextJs to enable easier networking with other 
 - Theming (Light and Dark
 - Sending messages using nodemailer
 
+## New Feature Alert!!
+
+For better description of the code clone the `with-comments` branch
+
+### FAQs
+
+Question: Why not merge the branch with `main` branch
+
+Answer: I personally believe in writing clean codes and try as much as possible to make it self explanatory. But for the sake of reaching beginner levels I have made this new branch
+
 ## Technologies
 
 - Typescript
