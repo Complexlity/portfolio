@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="grid-flow-rows grid  h-[calc(100vh-5rem)] items-center space-y-8 dark:text-gray-100 md:grid-cols-2"
+      className="grid-flow-rows grid min-h-screen items-center space-y-8 dark:text-gray-100 md:grid-cols-2"
     >
       <div className="mx-auto max-w-[800px] px-4 md:hidden">
         <Image
