@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="grid-flow-rows grid min-h-screen items-center space-y-8 dark:text-gray-100 md:grid-cols-2"
+      className=" grid items-center space-y-8 dark:text-gray-100 md:h-[calc(100vh-10rem)] md:grid-cols-2"
     >
       <div className="mx-auto max-w-[800px] px-4 md:hidden">
         <Image
@@ -24,6 +24,7 @@ const Hero = () => {
           width={200}
           height={400}
           alt="Picture of Me"
+          priority
         />
       </div>
       <div className="grid gap-3 px-1 text-center">
@@ -69,7 +70,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hidden px-4 md:block md:px-0">
+      <div className="mt-0 hidden px-4 md:block md:px-0">
         <Image
           className="mx-auto w-full "
           src={avatar}
