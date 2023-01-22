@@ -54,13 +54,12 @@ const About = () => {
             </p>
             <p className="py-2 text-gray-600 dark:text-gray-100">
               I am open to working on Front-end projects and Job positions. Do{" "}
-              <Link
-                href="/#contact"
-                target={"_blank"}
+              <a
+                href="#contact"
                 className="text-primary hover:underline dark:text-orange-300"
               >
                 send me a message
-              </Link>{" "}
+              </a>{" "}
             </p>
           </div>
         </div>
