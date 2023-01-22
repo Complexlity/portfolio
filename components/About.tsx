@@ -29,11 +29,18 @@ const About = () => {
               always pick new tech stacks as needed.
             </p>
             <p className="py-2 text-gray-600 dark:text-gray-100">
-              I started web developement in 2021, and have worked on building
-              web pages and also generating html templates using JOOMLA CMS
-              before I got interested in creating more interactive, custom and
-              beautiful web pages and this is when I learnt to build on the web
-              using JavaScript and ReactJs. <br></br>I have experience working
+              I started web development in 2021, and have worked on building at{" "}
+              <Link
+                href="https://www.pulsar-technologies.com/public/"
+                target={"_blank"}
+                className="text-primary hover:underline dark:text-orange-300"
+              >
+                Pulsar Technologies
+              </Link>{" "}
+              using HTML and CSS. On the project completion I got more
+              interested in creating more interactive, dynamic and beautiful web
+              pages and this is when I learnt to build on the web using
+              JavaScript and ReactJs. <br></br>I have experience working
               directly with clients and ensure that every assignment is carried
               out as specified. <br></br> In my spare time, I play some{" "}
               <Link
@@ -44,6 +51,16 @@ const About = () => {
                 chess
               </Link>{" "}
               as well as write <a href="openreplay.com">technical articles </a>
+            </p>
+            <p>
+              I am open to working on Front-end projects and positions. Do{" "}
+              <Link
+                href="/#contact"
+                target={"_blank"}
+                className="text-primary hover:underline dark:text-orange-300"
+              >
+                send me a message
+              </Link>{" "}
             </p>
           </div>
         </div>
