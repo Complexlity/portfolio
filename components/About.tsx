@@ -50,10 +50,10 @@ const About = () => {
               >
                 chess
               </Link>{" "}
-              as well as write <a href="openreplay.com">technical articles </a>
+              as well as write technical articles
             </p>
-            <p>
-              I am open to working on Front-end projects and positions. Do{" "}
+            <p className="py-2 text-gray-600 dark:text-gray-100">
+              I am open to working on Front-end projects and Job positions. Do{" "}
               <Link
                 href="/#contact"
                 target={"_blank"}
