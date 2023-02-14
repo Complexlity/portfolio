@@ -117,7 +117,7 @@ const projects: ProjectsType[] = [
         id: 9,
         title: "Form Validation",
         techologies: ["Javascript"],
-        description: "Client-side form validation program using Javascript",
+        description: "Client-side from validation program for texts, email, phone number and password",
         links: {
             live: "https://complexlity-form-validation.netlify.app/",
             code: "https://github.com/Complexlity/Form-Validation"
