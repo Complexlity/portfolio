@@ -6,6 +6,7 @@ import resumeBuilder from './gifs/resume-builder.gif'
 import taskList from './gifs/task-list.png'
 import formValidation from './gifs/form-validation.png'
 import calculator from './gifs/calculator.png'
+import ticTacToe from './gifs/tic-tac-toe.png'
 import { StaticImageData } from "next/image"
 import portfolio from "./gifs/portfolio.gif"
 
@@ -122,6 +123,18 @@ const projects: ProjectsType[] = [
             code: "https://github.com/Complexlity/Form-Validation"
         },
         image: formValidation,
+
+    },
+    {
+        id: 10,
+        title: "Tic Tac Toe",
+        techologies: ["Javascript"],
+        description: "An application similar to the real tic-tac-toe game and could be played by two players",
+        links: {
+            live: "https://complexlity-tic-tac-toe.netlify.app/",
+            code: "https://github.com/Complexlity/tic-tac-toe"
+        },
+        image: ticTacToe,
 
     }
 ]
