@@ -1,8 +1,8 @@
 import complexIcon from "../assets/complex.png";
 import { Spin as Hamburger } from "hamburger-react";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
-
+import Link from "next/link";
 import Image from "next/image";
 import { useThemeContext } from "../Contexts/ThemeContext";
 
@@ -37,12 +37,12 @@ const Navbar = () => {
   };
   return (
     <nav
-      className={`${navLook} sticky top-0 z-10 flex-col justify-between py-2 font-raleway dark:text-gray-100 md:flex md:flex-row md:py-3 md:py-4`}
+      className={`${navLook} sticky top-0 z-10 flex-col justify-between py-2 font-raleway dark:text-gray-100 md:flex md:flex-row md:py-4`}
     >
       <div className="flex items-center justify-between">
-        <div className="w-10 md:w-12">
+        <Link href={"/"} className="block w-10 md:w-12">
           <Image className="max-h-full w-auto" src={complexIcon} alt="Logo" />
-        </div>
+        </Link>
         <div className="md:hidden">
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
