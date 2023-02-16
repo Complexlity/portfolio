@@ -62,6 +62,7 @@ const Card: FC<CardsProps> = ({ card }) => {
     <div className="group flex h-full flex-col overflow-hidden rounded-lg shadow-md duration-75 ease-in-out hover:scale-[101%] dark:shadow-orange-800">
       <div>
         <Image
+          unoptimized={true}
           className="w-full object-contain"
           src={card.image}
           alt="projectImage"

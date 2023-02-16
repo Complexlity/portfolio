@@ -1,14 +1,14 @@
-import onlineStore from "./gifs/e-commerce-site.gif"
-import memoryGame from './gifs/memory-game.gif'
-import sketchApp from './gifs/etch-a-sketch.gif'
-import weatherApp from './gifs/weather-app.gif'
-import resumeBuilder from './gifs/resume-builder.gif'
+import portfolio from "./gifs/portfolio.png"
+import onlineStore from "./gifs/e-commerce-site.png"
+import memoryGame from './gifs/memory-game.png'
+import sketchApp from './gifs/etch-a-sketch.png'
+import weatherApp from './gifs/weather-app.png'
+import resumeBuilder from './gifs/resume-builder.png'
 import taskList from './gifs/task-list.png'
 import formValidation from './gifs/form-validation.png'
 import calculator from './gifs/calculator.png'
 import ticTacToe from './gifs/tic-tac-toe.png'
 import { StaticImageData } from "next/image"
-import portfolio from "./gifs/portfolio.gif"
 
 export interface ProjectsType {
     id: number
