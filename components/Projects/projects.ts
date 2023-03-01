@@ -8,6 +8,7 @@ import taskList from './assets/task-list.png'
 import formValidation from './assets/form-validation.png'
 import calculator from './assets/calculator.png'
 import ticTacToe from './assets/tic-tac-toe.png'
+import stackdocs from './assets/stackdocs.png'
 
 
 // Image component for the nextjs Image component. See Card.tsx for the <Image /> component in use
@@ -23,6 +24,16 @@ export interface ProjectsType {
 
 const projects: ProjectsType[] = [
     {
+        title: "Stack Docs",
+        techologies: ["ReactJs", "Docusaurus",],
+        description: "Fully functioning documentation page for stackup",
+        links: {
+            live: "https://stackdocs.netlify.app/",
+            code: "https://github.com/Complexlity/stackdocs"
+        },
+        image: stackdocs,
+
+    }, {
         title: "Personal Portfolio",
         techologies: ["NextJs", "Typescript", "Context API", "nodemailer", "TailwindCSS"],
         description: "This portfolio showing my skill, projects and contact",
