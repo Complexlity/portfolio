@@ -19,7 +19,7 @@ import "swiper/css/pagination";
 const Slider = () => {
   return (
     <Swiper
-      slidesPerView={2}
+      slidesPerView={1}
       spaceBetween={30}
       pagination={{
         clickable: true,
@@ -34,13 +34,13 @@ const Slider = () => {
         0: {
           slidesPerView: 1,
         },
-        580: {
+        600: {
           slidesPerView: 2,
           spaceBetween: 20,
         },
-        1000: {
+        900: {
           slidesPerView: 3,
-          spaceBetween: 30,
+          spaceBetween: 20,
         },
       }}
     >
