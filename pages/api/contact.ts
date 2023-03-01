@@ -1,12 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { mailOPtions, transporter } from '../../mail-files/nodemailer'
-import { formValues } from '../../components/Contact'
+import { formValues, result } from '../../components/Contact'
 
-type Data = {
-  message: string
-  success?: boolean
-}
+
 
 
 
@@ -35,12 +32,12 @@ const generateEmailContent = (data: formValues) => {
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<result>
 ) {
   if (req.method === "POST") {
     const data = req.body
     if (!data.name || !data.email || !data.subject || !data.message)
-      return res.status(400).json({ message: "Failed: Missing Required Values" })
+      return res.status(400).json({ success: false, message: "Failed: Missing Required Values" })
 
 
     try {
@@ -50,9 +47,9 @@ export default async function handler(
         subject: data.subject,
 
       })
-      return res.status(200).json({ message: "Success: Thank You For Contacting Complexlity", success: true })
+      return res.status(200).json({ success: true, message: "Message Sent 👍" })
     } catch (error: any) {
-      return res.status(400).json({ message: `Failed: Something Went Wrong. Please Try Reaching Me On Socials` })
+      return res.status(400).json({ success: false, message: `Something went wrong 😢` })
 
     }
   }

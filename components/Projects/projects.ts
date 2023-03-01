@@ -1,10 +1,13 @@
-// All used gifs in the projects section
-import onlineStore from "./gifs/e-commerce-site.gif"
-import memoryGame from './gifs/memory-game.gif'
-import sketchApp from './gifs/etch-a-sketch.gif'
-import weatherApp from './gifs/weather-app.gif'
-import resumeBuilder from './gifs/resume-builder.gif'
-import portfolio from "./gifs/portfolio.gif"
+import portfolio from "./assets/portfolio.png"
+import onlineStore from "./assets/e-commerce-site.png"
+import memoryGame from './assets/memory-game.png'
+import sketchApp from './assets/etch-a-sketch.png'
+import weatherApp from './assets/weather-app.png'
+import resumeBuilder from './assets/resume-builder.png'
+import taskList from './assets/task-list.png'
+import formValidation from './assets/form-validation.png'
+import calculator from './assets/calculator.png'
+import ticTacToe from './assets/tic-tac-toe.png'
 
 // Image component for the nextjs Image component. See Card.tsx for the <Image /> component in use
 import { StaticImageData } from "next/image"
@@ -25,7 +28,7 @@ const projects: ProjectsType[] = [
         id: 1,
         title: "Personal Portfolio",
         techologies: ["NextJs", "Typescript", "Context API", "nodemailer", "TailwindCSS"],
-        description: "I built ths app to connect with other developers easily as well as show my capabilities of learning new technologies (nodemailer, ContextAPI and NextJs) and steady continous growth as a developer.",
+        description: "This portfolio showing my skill, projects and contact",
         links: {
             live: "/",
             code: "https://github.com/Complexlity/portfolio"
@@ -36,7 +39,7 @@ const projects: ProjectsType[] = [
         id: 2,
         title: "Online Store",
         techologies: ["ReactJs", "Typescript", "Redux", "TailwindCSS"],
-        description: "This application exhibits the core features of e-commerce applications. I built this to solidify the concepts of React routing and State Manageement also to learn the importance of typescript in reducing user errors and how it is used in an actually application. It also helped me understand the importance theme in web accessibility and how I should always consider having them in my applications",
+        description: "An e commerce application with routing and cart function",
         links: {
             live: "https://complexlity-ecommerce-site.vercel.app/",
             code: "https://github.com/Complexlity/eCommerce-site"
@@ -47,7 +50,7 @@ const projects: ProjectsType[] = [
         id: 3,
         title: "Memory Game",
         techologies: ["ReactJs", "firebase", "Framer Motion", "TailwindCSS"],
-        description: "This application tends to test retentive abilities. I built this to solidify my knowledge of key react concepts like lifecycle of components and state. It was also built using framer motion to add animations when the card components mount. I also implemented a login feature to save and get user score across any device",
+        description: "Memory game is a application that tends to test retentive memory. It also saves the users score on the cloud",
         links: {
             live: "https://complexlity-memory-game.netlify.app/",
             code: "https://github.com/Complexlity/memory-game"
@@ -58,7 +61,7 @@ const projects: ProjectsType[] = [
         id: 4,
         title: "Resume Builder",
         techologies: ["ReactJs", "API", "TailwindCSS"],
-        description: "This application involves live transfer of information between components. It was built to understand the concepts of state and props in React as well as how to communicate with external API. Two random user generators as well as a random quote generator APIs were used to create generated profile information",
+        description: "Resume Builder takes user information and creates a CV template with it. It also has the feature to generate dummy information",
         links: {
             live: "https://complexlity-resume-builder.netlify.app/",
             code: "https://github.com/Complexlity/resume-builder.git"
@@ -70,7 +73,7 @@ const projects: ProjectsType[] = [
         id: 5,
         title: "Weather App",
         techologies: ["Javascript", "TailwindCSS", "API"],
-        description: "This is the first application I built which involved fetching data externally. It used the openweather current weather data to populate the page. It also has the feature of using the browser navigation geolocation to make the user's location the default",
+        description: "An application to get the weather of any location. It uses the user's location as default",
         links: {
             live: "https://complexlity-weather-app.netlify.app/",
             code: "https://github.com/Complexlity/weather-app"
@@ -80,9 +83,9 @@ const projects: ProjectsType[] = [
     },
     {
         id: 6,
-        title: "Sketch Application",
+        title: "Etch-A-Sketch",
         techologies: ["Javascript", "TailwindCSS"],
-        description: "This application taught me how to use and the benefits of TailwindCSS as well as application development using Javascript. It also employed the use of some sort of 'state' which would go on to be the core features of Javascript frameworks",
+        description: "This an application that simulates the real etch-a-sketch. It contains black, random, erase, reset, lighten and darken brushes",
         links: {
             live: "https://complexlity-etch-a-sketch.netlify.app/",
             code: "https://github.com/Complexlity/Etch-A-Sketch"
@@ -90,6 +93,54 @@ const projects: ProjectsType[] = [
         image: sketchApp,
 
     },
+    {
+        id: 7,
+        title: "Calculator",
+        techologies: ["Javascript"],
+        description: "Digital Calculator with all the basic arithmetic functions (addition, subtraction, division, multiplication, clear, delete, and zero-division error) ",
+        links: {
+            live: "https://complexlity-calculator.netlify.app/",
+            code: "https://github.com/Complexlity/Calculator"
+        },
+        image: calculator,
+
+    },
+    {
+        id: 8,
+        title: "Task List",
+        techologies: ["Javascript"],
+        description: "Todo application with functions to add, edit and delete items",
+        links: {
+            live: "https://complexlity-task-list.netlify.app/",
+            code: "https://github.com/Complexlity/Task-List"
+        },
+        image: taskList,
+
+    },
+    {
+        id: 9,
+        title: "Form Validation",
+        techologies: ["Javascript"],
+        description: "Client-side from validation program for texts, email, phone number and password",
+        links: {
+            live: "https://complexlity-form-validation.netlify.app/",
+            code: "https://github.com/Complexlity/Form-Validation"
+        },
+        image: formValidation,
+
+    },
+    {
+        id: 10,
+        title: "Tic Tac Toe",
+        techologies: ["Javascript"],
+        description: "An application similar to the real tic-tac-toe game and could be played by two players",
+        links: {
+            live: "https://complexlity-tic-tac-toe.netlify.app/",
+            code: "https://github.com/Complexlity/tic-tac-toe"
+        },
+        image: ticTacToe,
+
+    }
 ]
 
 export default projects

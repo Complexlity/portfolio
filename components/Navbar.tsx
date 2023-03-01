@@ -11,10 +11,17 @@ import Image from "next/image";
 import { Spin as Hamburger } from "hamburger-react";
 
 // Custom context hook to read global state data. See /Contexts/ThemeContext.tsx for more information
-import { useThemeContext } from "../Contexts/ThemeContext";
+import Link from "next/link";
 
 // Moon and sun icon used to toggle theme. See https://react-icons.github.io/react-icons/
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
+
+import { useThemeContext } from "../Contexts/ThemeContext";
+
+interface Props {
+  darkTheme: boolean;
+  setDarkTheme: Dispatch<SetStateAction<boolean>>;
+}
 
 // This outputs the mobile or the desktop navbar depending on the width of the screen
 const Navbar = () => {
@@ -58,12 +65,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${navLook} sticky top-0 z-10 flex-col justify-between py-2 font-raleway dark:text-gray-100 md:flex md:flex-row md:py-3 md:py-4`}
+      className={`${navLook} sticky top-0 z-10 flex-col justify-between py-2 font-raleway dark:text-gray-100 md:flex md:flex-row md:py-4`}
     >
       <div className="flex items-center justify-between">
-        <div className="w-10 md:w-12">
+        <Link href={"/"} className="block w-10 md:w-12">
           <Image className="max-h-full w-auto" src={complexIcon} alt="Logo" />
-        </div>
+        </Link>
         <div className="md:hidden">
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>

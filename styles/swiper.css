@@ -1,0 +1,37 @@
+:root {
+  --swiper-theme-color: #5b21b6 !important;
+}
+
+.dark {
+  --swiper-theme-color: #f97316 !important;
+}
+
+.swiper {
+  width: 100%;
+  padding-bottom: 40px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #5b21b6;
+}
+
+.dark .swiper-button-next:after,
+.dark .swiper-button-prev:after {
+  color: #f97316;
+}
+
+@media screen and (max-width: 800px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet:active {
+  background: #5b21b6;
+}
+
+.dark .swiper-pagination-bullet:active {
+  background: #f97316;
+}
