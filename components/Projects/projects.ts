@@ -9,13 +9,13 @@ import formValidation from './assets/form-validation.png'
 import calculator from './assets/calculator.png'
 import ticTacToe from './assets/tic-tac-toe.png'
 
+
 // Image component for the nextjs Image component. See Card.tsx for the <Image /> component in use
 import { StaticImageData } from "next/image"
 
 
 // Interface of what a project object should have
 export interface ProjectsType {
-    id: number
     image: StaticImageData
     title: string
     techologies: string[]
@@ -25,7 +25,6 @@ export interface ProjectsType {
 
 const projects: ProjectsType[] = [
     {
-        id: 1,
         title: "Personal Portfolio",
         techologies: ["NextJs", "Typescript", "Context API", "nodemailer", "TailwindCSS"],
         description: "This portfolio showing my skill, projects and contact",
@@ -36,7 +35,6 @@ const projects: ProjectsType[] = [
         image: portfolio,
 
     }, {
-        id: 2,
         title: "Online Store",
         techologies: ["ReactJs", "Typescript", "Redux", "TailwindCSS"],
         description: "An e commerce application with routing and cart function",
@@ -47,7 +45,6 @@ const projects: ProjectsType[] = [
         image: onlineStore,
 
     }, {
-        id: 3,
         title: "Memory Game",
         techologies: ["ReactJs", "firebase", "Framer Motion", "TailwindCSS"],
         description: "Memory game is a application that tends to test retentive memory. It also saves the users score on the cloud",
@@ -58,7 +55,6 @@ const projects: ProjectsType[] = [
         image: memoryGame,
 
     }, {
-        id: 4,
         title: "Resume Builder",
         techologies: ["ReactJs", "API", "TailwindCSS"],
         description: "Resume Builder takes user information and creates a CV template with it. It also has the feature to generate dummy information",
@@ -70,7 +66,6 @@ const projects: ProjectsType[] = [
 
     },
     {
-        id: 5,
         title: "Weather App",
         techologies: ["Javascript", "TailwindCSS", "API"],
         description: "An application to get the weather of any location. It uses the user's location as default",
@@ -82,7 +77,6 @@ const projects: ProjectsType[] = [
 
     },
     {
-        id: 6,
         title: "Etch-A-Sketch",
         techologies: ["Javascript", "TailwindCSS"],
         description: "This an application that simulates the real etch-a-sketch. It contains black, random, erase, reset, lighten and darken brushes",
@@ -94,7 +88,6 @@ const projects: ProjectsType[] = [
 
     },
     {
-        id: 7,
         title: "Calculator",
         techologies: ["Javascript"],
         description: "Digital Calculator with all the basic arithmetic functions (addition, subtraction, division, multiplication, clear, delete, and zero-division error) ",
@@ -106,7 +99,6 @@ const projects: ProjectsType[] = [
 
     },
     {
-        id: 8,
         title: "Task List",
         techologies: ["Javascript"],
         description: "Todo application with functions to add, edit and delete items",
@@ -118,7 +110,6 @@ const projects: ProjectsType[] = [
 
     },
     {
-        id: 9,
         title: "Form Validation",
         techologies: ["Javascript"],
         description: "Client-side from validation program for texts, email, phone number and password",
@@ -130,7 +121,6 @@ const projects: ProjectsType[] = [
 
     },
     {
-        id: 10,
         title: "Tic Tac Toe",
         techologies: ["Javascript"],
         description: "An application similar to the real tic-tac-toe game and could be played by two players",

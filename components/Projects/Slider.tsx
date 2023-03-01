@@ -45,7 +45,7 @@ const Slider = () => {
       }}
     >
       {projects.map((project) => (
-        <SwiperSlide key={project.id}>
+        <SwiperSlide key={uniqid()}>
           <Card card={project}></Card>
         </SwiperSlide>
       ))}
