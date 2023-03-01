@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className=" grid items-center space-y-8  dark:text-gray-100 md:grid-cols-2 portrait:min-h-screen "
+      className=" grid min-h-[calc(90vh)] items-center  space-y-8 dark:text-gray-100 md:grid-cols-2 "
     >
       <div className="mx-auto max-w-[800px] px-4 md:hidden">
         <Image
