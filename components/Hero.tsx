@@ -52,7 +52,11 @@ const Hero = () => {
                 <FaLinkedinIn size={24} />
               </div>
             </a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/Complexlity"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className={iconsStyles}>
                 <FaGithub size={24} />
               </div>
