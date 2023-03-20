@@ -68,7 +68,6 @@ const Card: FC<CardsProps> = ({ card }) => {
           alt="projectImage"
           width={200}
           height={400}
-          priority
         />
       </div>
       <div className="flex flex-1 flex-col gap-2 py-4 px-6">
