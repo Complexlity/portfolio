@@ -1,20 +1,21 @@
 import complexIcon from "../assets/complex.png";
 import { Spin as Hamburger } from "hamburger-react";
 import { useEffect, useState } from "react";
-import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
+// import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
-import { useThemeContext } from "../Contexts/ThemeContext";
+import ThemeSwitch from "./ThemeSwitch";
+// import { useThemeContext } from "../Contexts/ThemeContext";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const darkTheme = useThemeContext().darkMode;
-  const setDarkTheme = useThemeContext().setDarkMode;
+  // const darkTheme = useThemeContext().darkMode;
+  // const setDarkTheme = useThemeContext().setDarkMode;
 
-  function toggleTheme() {
-    setDarkTheme(!darkTheme);
-  }
+  // function toggleTheme() {
+  //   setDarkTheme(!darkTheme);
+  // }
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
@@ -53,17 +54,7 @@ const Navbar = () => {
 
       <div className="flex items-center gap-4 ">
         <NavLinks mobile={false} />
-        <div
-          onClick={toggleTheme}
-          className="fixed bottom-4 right-8 rounded-full bg-primary/70 p-3 dark:bg-gray-500/90 md:static md:block md:rounded-none md:bg-inherit md:dark:bg-inherit"
-        >
-          {!darkTheme && (
-            <BsFillSunFill className="h-6 w-6 cursor-pointer text-gray-100 md:text-blue-500" />
-          )}
-          {darkTheme && (
-            <BsMoonFill className="h-6 w-6 scale-[90%] cursor-pointer text-amber-200" />
-          )}
-        </div>
+        <ThemeSwitch />
       </div>
     </nav>
   );
