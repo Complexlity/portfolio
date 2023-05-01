@@ -12,7 +12,11 @@ const ThemeSwitch: FC<Props> = () => {
   }, []);
 
   if (!mounted) {
-    return null;
+    return (
+      <div className="fixed bottom-4 right-8 rounded-full bg-primary/70 p-3 dark:bg-gray-500/90 md:static md:block md:rounded-none md:bg-inherit md:dark:bg-inherit">
+        <BsFillSunFill className="invisible h-6 w-6 cursor-pointer text-gray-100 md:text-blue-500" />
+      </div>
+    );
   }
 
   function toggleTheme() {
@@ -24,7 +28,6 @@ const ThemeSwitch: FC<Props> = () => {
       onClick={toggleTheme}
       className="fixed bottom-4 right-8 rounded-full bg-primary/70 p-3 dark:bg-gray-500/90 md:static md:block md:rounded-none md:bg-inherit md:dark:bg-inherit"
     >
-      {!theme && <div className="invisible h-6 w-6"></div>}
       {theme === "light" ? (
         <BsFillSunFill className="h-6 w-6 cursor-pointer text-gray-100 md:text-blue-500" />
       ) : null}
