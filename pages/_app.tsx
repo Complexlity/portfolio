@@ -8,7 +8,11 @@ import { ThemeProvider } from "next-themes";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider
+      attribute="class"
+      themes={["light", "dark"]}
+      enableSystem={false}
+    >
       <Component {...pageProps} />
       <Analytics />
     </ThemeProvider>
