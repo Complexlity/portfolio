@@ -44,7 +44,7 @@ const Hero = () => {
         <div className="grid justify-center">
           <div className="bg- mx-auto flex w-full content-center items-center gap-4 py-4 md:gap-6">
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/nwalozie-elijah-306b33215/"
               target="_blank"
               rel="noreferrer"
             >
