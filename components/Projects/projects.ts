@@ -9,7 +9,8 @@ import formValidation from './assets/form-validation.png'
 import calculator from './assets/calculator.png'
 import ticTacToe from './assets/tic-tac-toe.png'
 import stackdocs from './assets/stackdocs.png'
-
+import creativeArtMarketplace from './assets/creative-arts-marketplace.png'
+import blog from './assets/blog.png'
 
 // Image component for the nextjs Image component. See Card.tsx for the <Image /> component in use
 import { StaticImageData } from "next/image"
@@ -17,15 +18,38 @@ import { StaticImageData } from "next/image"
 export interface ProjectsType {
     image: StaticImageData
     title: string
-    techologies: string[]
+    technologies: string[]
     description: string
     links: { live: string, code: string }
 }
 
 const projects: ProjectsType[] = [
     {
+        title: "Blog Platform",
+        technologies: ["Nextjs, express, Nodejs, MongoDB, AWS, TailwindCSS,"],
+        description: "A place to write and share content with rich text editor offering smooth experience",
+        links: {
+            live: "https://complexlity-blog.vercel.app",
+            code: "https://github.com/Complexlity/blog-client"
+        },
+        image: blog
+    },
+
+    {
+        title: "Creative Arts Marketplace",
+        technologies: ["Nextjs, RainbowKit, Formik/Yup","TailwindCSS"],
+        description: "A place to mint, showcase and sell your creative NFTs and beautiful Arts",
+        links: {
+            live: "https://creative-art-marketplace.vercel.app",
+            code: "https://github.com/Complexlity/creative-art-marketplace"
+        },
+        image: creativeArtMarketplace
+
+    },
+
+    {
         title: "Stack Docs",
-        techologies: ["ReactJs", "Docusaurus",],
+        technologies: ["ReactJs", "Docusaurus",],
         description: "Fully functioning documentation page for stackup",
         links: {
             live: "https://stackdocs.netlify.app/",
@@ -35,7 +59,7 @@ const projects: ProjectsType[] = [
 
     }, {
         title: "Personal Portfolio",
-        techologies: ["NextJs", "Typescript", "Context API", "nodemailer", "TailwindCSS"],
+        technologies: ["NextJs", "Typescript", "Context API", "nodemailer", "TailwindCSS"],
         description: "This portfolio showing my skill, projects and contact",
         links: {
             live: "/",
@@ -45,7 +69,7 @@ const projects: ProjectsType[] = [
 
     }, {
         title: "Online Store",
-        techologies: ["ReactJs", "Typescript", "Redux", "TailwindCSS"],
+        technologies: ["ReactJs", "Typescript", "Redux", "TailwindCSS"],
         description: "An e commerce application with routing and cart function",
         links: {
             live: "https://complexlity-ecommerce-site.vercel.app/",
@@ -55,7 +79,7 @@ const projects: ProjectsType[] = [
 
     }, {
         title: "Memory Game",
-        techologies: ["ReactJs", "firebase", "Framer Motion", "TailwindCSS"],
+        technologies: ["ReactJs", "firebase", "Framer Motion", "TailwindCSS"],
         description: "Memory game is a application that tends to test retentive memory. It also saves the users score on the cloud",
         links: {
             live: "https://complexlity-memory-game.netlify.app/",
@@ -64,8 +88,18 @@ const projects: ProjectsType[] = [
         image: memoryGame,
 
     }, {
+        title: "Etch-A-Sketch",
+        technologies: ["Javascript", "TailwindCSS"],
+        description: "This an application that simulates the real etch-a-sketch. It contains black, random, erase, reset, lighten and darken brushes",
+        links: {
+            live: "https://complexlity-etch-a-sketch.netlify.app/",
+            code: "https://github.com/Complexlity/Etch-A-Sketch"
+        },
+        image: sketchApp,
+
+    },{
         title: "Resume Builder",
-        techologies: ["ReactJs", "API", "TailwindCSS"],
+        technologies: ["ReactJs", "API", "TailwindCSS"],
         description: "Resume Builder takes user information and creates a CV template with it. It also has the feature to generate dummy information",
         links: {
             live: "https://complexlity-resume-builder.netlify.app/",
@@ -76,7 +110,7 @@ const projects: ProjectsType[] = [
     },
     {
         title: "Weather App",
-        techologies: ["Javascript", "TailwindCSS", "API"],
+        technologies: ["Javascript", "TailwindCSS", "API"],
         description: "An application to get the weather of any location. It uses the user's location as default",
         links: {
             live: "https://complexlity-weather-app.netlify.app/",
@@ -85,20 +119,10 @@ const projects: ProjectsType[] = [
         image: weatherApp,
 
     },
-    {
-        title: "Etch-A-Sketch",
-        techologies: ["Javascript", "TailwindCSS"],
-        description: "This an application that simulates the real etch-a-sketch. It contains black, random, erase, reset, lighten and darken brushes",
-        links: {
-            live: "https://complexlity-etch-a-sketch.netlify.app/",
-            code: "https://github.com/Complexlity/Etch-A-Sketch"
-        },
-        image: sketchApp,
-
-    },
+    
     {
         title: "Calculator",
-        techologies: ["Javascript"],
+        technologies: ["Javascript"],
         description: "Digital Calculator with all the basic arithmetic functions (addition, subtraction, division, multiplication, clear, delete, and zero-division error) ",
         links: {
             live: "https://complexlity-calculator.netlify.app/",
@@ -109,7 +133,7 @@ const projects: ProjectsType[] = [
     },
     {
         title: "Task List",
-        techologies: ["Javascript"],
+        technologies: ["Javascript"],
         description: "Todo application with functions to add, edit and delete items",
         links: {
             live: "https://complexlity-task-list.netlify.app/",
@@ -120,7 +144,7 @@ const projects: ProjectsType[] = [
     },
     {
         title: "Form Validation",
-        techologies: ["Javascript"],
+        technologies: ["Javascript"],
         description: "Client-side from validation program for texts, email, phone number and password",
         links: {
             live: "https://complexlity-form-validation.netlify.app/",
@@ -131,7 +155,7 @@ const projects: ProjectsType[] = [
     },
     {
         title: "Tic Tac Toe",
-        techologies: ["Javascript"],
+        technologies: ["Javascript"],
         description: "An application similar to the real tic-tac-toe game and could be played by two players",
         links: {
             live: "https://complexlity-tic-tac-toe.netlify.app/",

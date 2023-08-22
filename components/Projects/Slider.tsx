@@ -76,7 +76,7 @@ const Card: FC<CardsProps> = ({ card }) => {
           {card.title}
         </h1>
         <div className="flex flex-wrap gap-2 text-sm">
-          {card.techologies.map((value) => (
+          {card.technologies.map((value) => (
             <button
               key={uniqid()}
               className="rounded-full bg-primary  px-2 text-[.5rem] text-gray-100 hover:bg-primaryLight dark:bg-orange-300 dark:text-[80%]   dark:font-semibold dark:text-black md:text-[.5rem] md:tracking-wide"
