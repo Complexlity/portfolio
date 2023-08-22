@@ -26,7 +26,7 @@ export interface ProjectsType {
 const projects: ProjectsType[] = [
     {
         title: "Blog Platform",
-        technologies: ["Nextjs, express, Nodejs, MongoDB, AWS, TailwindCSS,"],
+        technologies: ["Nextjs", "express", "Nodejs", "MongoDB", "AWS", "TailwindCSS"],
         description: "A place to write and share content with rich text editor offering smooth experience",
         links: {
             live: "https://complexlity-blog.vercel.app",
@@ -37,7 +37,7 @@ const projects: ProjectsType[] = [
 
     {
         title: "Creative Arts Marketplace",
-        technologies: ["Nextjs, RainbowKit, Formik/Yup","TailwindCSS"],
+        technologies: ["Nextjs", "RainbowKit", "Formik/Yup","TailwindCSS"],
         description: "A place to mint, showcase and sell your creative NFTs and beautiful Arts",
         links: {
             live: "https://creative-art-marketplace.vercel.app",
@@ -119,7 +119,7 @@ const projects: ProjectsType[] = [
         image: weatherApp,
 
     },
-    
+
     {
         title: "Calculator",
         technologies: ["Javascript"],

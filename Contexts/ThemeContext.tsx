@@ -1,5 +1,7 @@
 import { useState, createContext, useContext } from "react";
 
+
+
 export type GlobalTheme = {
   darkMode: boolean;
   setDarkMode: (c: boolean) => void;
