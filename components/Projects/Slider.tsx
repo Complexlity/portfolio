@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import { ProjectsType } from "./projects";
+import { ProjectsType } from "./data";
 import uniqid from "uniqid";
 import { TbWorld } from "react-icons/tb";
 import { AiFillGithub } from "react-icons/ai";
@@ -11,7 +11,7 @@ import Button from "./Button";
 import { Navigation, Pagination, Keyboard } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import Card from "./Card";
-import projects from "./projects";
+import projects from "./data";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

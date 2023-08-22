@@ -9,8 +9,8 @@ import formValidation from './assets/form-validation.png'
 import calculator from './assets/calculator.png'
 import ticTacToe from './assets/tic-tac-toe.png'
 import stackdocs from './assets/stackdocs.png'
-import creativeArtMarketplace from './assets/creative-arts-marketplace.png'
-import blog from './assets/blog.png'
+import creativeArtMarketplace from './assets/creative-art-marketplace.png'
+import blogPlatform from './assets/blog-platform.png'
 
 // Image component for the nextjs Image component. See Card.tsx for the <Image /> component in use
 import { StaticImageData } from "next/image"
@@ -32,7 +32,7 @@ const projects: ProjectsType[] = [
             live: "https://complexlity-blog.vercel.app",
             code: "https://github.com/Complexlity/blog-client"
         },
-        image: blog
+        image: blogPlatform
     },
 
     {

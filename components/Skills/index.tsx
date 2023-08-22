@@ -1,4 +1,4 @@
-import { skills } from "./skills";
+import { skills } from "./data";
 import uniqid from "uniqid";
 import Card from "./Card";
 
