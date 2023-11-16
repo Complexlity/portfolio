@@ -48,7 +48,13 @@ const About = () => {
               >
                 chess
               </Link>{" "}
-              as well as write technical articles
+              as well as write <Link
+                href="https://blog.openreplay.com/authors/nwalozie-elijah/"
+                target={"_blank"}
+                className="text-primary hover:underline dark:text-orange-300"
+              >
+                technical articles
+              </Link>{" "}
             </p>
             <p className="py-2 text-gray-600 dark:text-gray-100">
               I am open to working on Web based projects involving Reactjs or Nodejs. Do{" "}
