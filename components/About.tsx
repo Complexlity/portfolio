@@ -20,27 +20,25 @@ const About = () => {
           >
             <p className="py-2 text-gray-600 dark:text-gray-100">
               I specialize in building mobile responsive front-end UI
-              applications that connect with API's and other backend My primary
-              skills involve using HTML, CSS, JavaScript (or TypeScript),
-              ReactJs(as well as NextJs as needed) to build good and scalable
+              applications that connect with API's and other backend.
+              My primary skills involve using HTML, CSS, JavaScript (or TypeScript),
+              ReactJs and Nodejs to build good and scalable
               applications and while also inculcating any necessary technology
               required to bring ideas to life technologies. I'm enthusiastic
               about learning new technology and I am a quick learner who can
               always pick new tech stacks as needed.
             </p>
             <p className="py-2 text-gray-600 dark:text-gray-100">
-              I started web development in 2021, and have worked on building at{" "}
+              I started web development in 2021, and currently breaking things at{" "}
               <Link
                 href="https://www.pulsar-technologies.com/public/"
                 target={"_blank"}
                 className="text-primary hover:underline dark:text-orange-300"
               >
-                Pulsar Technologies
+                Pulsar Technologies.
               </Link>{" "}
-              using HTML and CSS. On the project completion I got more
-              interested in creating more interactive, dynamic and beautiful web
-              pages and this is when I learnt to build on the web using
-              JavaScript and ReactJs. <br></br>I have experience working
+              <br></br>
+              I have experience working
               directly with clients and ensure that every assignment is carried
               out as specified. <br></br> In my spare time, I play some{" "}
               <Link
@@ -53,7 +51,7 @@ const About = () => {
               as well as write technical articles
             </p>
             <p className="py-2 text-gray-600 dark:text-gray-100">
-              I am open to working on Front-end projects and Job positions. Do{" "}
+              I am open to working on Web based projects involving Reactjs or Nodejs. Do{" "}
               <a
                 href="#contact"
                 className="text-primary hover:underline dark:text-orange-300"
