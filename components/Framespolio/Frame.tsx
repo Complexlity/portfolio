@@ -34,6 +34,7 @@ export default function Frame({ frame, index }: { frame: FramesType, index: numb
             width="800"
           />
         </div>
+        <hr className="my-2 bg-primary dark:bg-orange-300 outline:none border:none text-primary border-spacing-0 border-collapse py-[.5px]"/>
       </section>
     </>
   );
