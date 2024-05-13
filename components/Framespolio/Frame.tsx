@@ -6,14 +6,14 @@ import { FramesType } from "./data";
 export default function Frame({ frame, index }: { frame: FramesType, index: number }) {
   return (
     <>
-      <section className="w-full">
+      <div className="w-full">
         <div
           className={`container flex flex-col items-center justify-center gap-8 lg:gap-0 ${
-            index % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"
+            index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"
           }`}
         >
-          <div className="] space-y-4 lg:w-1/2 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          <div className="] space-y-2 lg:w-1/2 text-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
               {frame.title}
             </h2>
             <p className="mx-auto max-w-[600px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -35,7 +35,7 @@ export default function Frame({ frame, index }: { frame: FramesType, index: numb
           />
         </div>
         <hr className="my-2 bg-primary dark:bg-orange-300 outline:none border:none text-primary border-spacing-0 border-collapse py-[.5px]"/>
-      </section>
+      </div>
     </>
   );
 }
