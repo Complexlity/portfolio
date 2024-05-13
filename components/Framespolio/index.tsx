@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Frame from "./Frame";
+import frames from "./data";
 
 const Framepolio = () => {
   return (
@@ -12,7 +13,9 @@ const Framepolio = () => {
           <h2 className=" text-xl font-bold  uppercase tracking-widest text-primary dark:text-orange-300">
             My Framespolio
           </h2>
-          <Frame />
+          {frames.map((frame) => (
+            <Frame frame={frame} />
+          ))}
           {/* <h3 className="py-2 font-raleway text-3xl  font-semibold dark:text-gray-200">
             Who I Am
           </h3>

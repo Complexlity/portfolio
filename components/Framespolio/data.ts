@@ -1,26 +1,24 @@
 
-import blogPlatform from "./assets/blog-platform.png";
+import farcaster101 from "../../assets/farcaster101.png";
 
 // Image component for the nextjs Image component. See Card.tsx for the <Image /> component in use
 import { StaticImageData } from "next/image";
 
-export interface ProjectsType {
+export interface FramesType {
   image: StaticImageData;
   title: string;
   description: string;
   link: string;
 }
 
-const projects: ProjectsType[] = [
+const frames: FramesType[] = [
   {
-    title: "Blog Platform",
+    title: "Farcaster 101",
     description:
-      "A place to write and share content with rich text editor offering smooth experience",
-    link: "",
-    image: blogPlatform,
+      "A fully interactive frame that teaches people all they need to knkow about farcaster",
+    link: "https://warpcast.com/complexlity/0x6fa23d12",
+    image: farcaster101,
   },
-
-
 ];
 
-export default projects;
+export default frames;
