@@ -29,12 +29,12 @@ export default function Home() {
               {/* Framespolio  */}
               <Framespolio />
               {/* About section  */}
-              <About />
+              {/* <About /> */}
               {/* <About /> */}
               {/* Projects Section */}
-              <Projects />
+              {/* <Projects /> */}
               {/* Skills Section */}
-              <Skills />
+              {/* <Skills /> */}
               {/* Contact Section */}
               <Contact />
               {/* Footer Section */}

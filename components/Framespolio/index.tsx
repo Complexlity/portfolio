@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Frame from "./Frame";
 
 const Framepolio = () => {
   return (
@@ -9,9 +10,10 @@ const Framepolio = () => {
       <div className="  gap-8 md:grid">
         <div className="">
           <h2 className=" text-xl font-bold  uppercase tracking-widest text-primary dark:text-orange-300">
-            About
+            My Framespolio
           </h2>
-          <h3 className="py-2 font-raleway text-3xl  font-semibold dark:text-gray-200">
+          <Frame />
+          {/* <h3 className="py-2 font-raleway text-3xl  font-semibold dark:text-gray-200">
             Who I Am
           </h3>
           <div
@@ -67,7 +69,7 @@ const Framepolio = () => {
                 send me a message
               </a>{" "}
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
