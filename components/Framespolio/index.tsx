@@ -6,16 +6,19 @@ const Framepolio = () => {
   return (
     <section
       id="about"
-      className="mt-2 flex w-full items-center px-2 md:h-screen"
+      className="mt-2 flex w-full items-center px-2"
     >
       <div className="  gap-8 md:grid">
         <div className="">
           <h2 className=" text-xl font-bold  uppercase tracking-widest text-primary dark:text-orange-300">
             My Framespolio
           </h2>
-          {frames.map((frame) => (
-            <Frame frame={frame} />
+          <div>
+
+          {frames.map((frame, index) => (
+            <Frame frame={frame} key={index} />
           ))}
+          </div>
           {/* <h3 className="py-2 font-raleway text-3xl  font-semibold dark:text-gray-200">
             Who I Am
           </h3>
