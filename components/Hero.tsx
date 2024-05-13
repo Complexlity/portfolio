@@ -6,6 +6,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { useThemeContext } from "../Contexts/ThemeContext";
+import { SiFarcaster } from "react-icons/si";
 
 const Hero = () => {
   const theme = useThemeContext().darkMode;
@@ -35,15 +36,15 @@ const Hero = () => {
               Complexlity
             </span>
           </h1>
-          <h1>A Full Stack Developer</h1>
+          <h1>I build frames</h1>
         </div>
-        <p className="mx-auto w-full max-w-[45ch] md:m-0 md:max-w-[65ch]">
+        {/* <p className="mx-auto w-full max-w-[45ch] md:m-0 md:max-w-[65ch]">
           I am focused on building responsive and accessiblity compliant web
           applications and integrating APIs and back-end technologies .
-        </p>
+        </p> */}
         <div className="grid justify-center">
           <div className="bg- mx-auto flex w-full content-center items-center gap-4 py-4 md:gap-6">
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/nwalozie-elijah-306b33215/"
               target="_blank"
               rel="noreferrer"
@@ -51,7 +52,7 @@ const Hero = () => {
               <div className={iconsStyles}>
                 <FaLinkedinIn size={24} />
               </div>
-            </a>
+            </a> */}
             <a
               href="https://github.com/Complexlity"
               target="_blank"
@@ -66,9 +67,15 @@ const Hero = () => {
                 <AiOutlineMail size={24} />
               </div>
             </Link>
-            <Link href="#">
+            {/* <Link href="#">
               <div className={iconsStyles}>
                 <BsFillPersonLinesFill size={24} />
+              </div>
+            </Link> */}
+            <Link href="https://warpcast.com/complexlity">
+              <div className={iconsStyles}>
+                <SiFarcaster size={24} />
+
               </div>
             </Link>
           </div>
