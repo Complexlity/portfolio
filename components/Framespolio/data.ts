@@ -58,7 +58,7 @@ const frames: FramesType[] = [
     description:
       "A monetisation frame that let's user gift their favorite creators for casting or sharing information. ",
     link: "https://warpcast.com/complexlity/0xd6347c18",
-    image: framesGallery,
+    image: buyMeACoffee,
   },
 ];
 

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import darkImage from "../../assets/darkImage.png";
 import { FramesType } from "./data";
 export default function Frame({ frame }: { frame: FramesType }) {
   return (
