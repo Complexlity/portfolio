@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import { useThemeContext } from "../Contexts/ThemeContext";
+import Framespolio from "../components/Framespolio";
 
 export default function Home() {
   const darkMode = useThemeContext().darkMode;
@@ -25,6 +26,8 @@ export default function Home() {
             <div className=" mx-auto grid">
               {/* Hero Section  */}
               <Hero />
+              {/* Framespolio  */}
+              <Framespolio />
               {/* About section  */}
               <About />
               {/* <About /> */}
