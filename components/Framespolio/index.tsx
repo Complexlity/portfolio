@@ -16,7 +16,7 @@ const Framepolio = () => {
           <div>
 
           {frames.map((frame, index) => (
-            <Frame frame={frame} key={index} />
+            <Frame frame={frame} key={index} index={index} />
           ))}
           </div>
           {/* <h3 className="py-2 font-raleway text-3xl  font-semibold dark:text-gray-200">
