@@ -22,7 +22,7 @@ const Footer = () => {
               color=""
             />
           </Link>
-          <Link href="https://www.twitter.com">
+          <Link href="https://www.twitter.com/Complexlity">
             <FaTwitter
               className="h-4 w-4 text-[#1DA1F2]  sm:h-8 sm:w-8"
               color=""
