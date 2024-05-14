@@ -78,7 +78,10 @@ const NavLinks = ({ animation, mobile }: navlinks) => {
       <a href="#hero" className={linkStyles}>
         Home
       </a>
-      <a href="#about" className={linkStyles}>
+      <a href="#framesfolio" className={linkStyles}>
+        Framesfolio
+      </a>
+      {/* <a href="#about" className={linkStyles}>
         About
       </a>
       <a href="#projects" className={linkStyles}>
@@ -86,7 +89,7 @@ const NavLinks = ({ animation, mobile }: navlinks) => {
       </a>
       <a href="#skills" className={linkStyles}>
         Skills
-      </a>
+      </a> */}
       <a href="#contact" className={linkStyles}>
         Contact
       </a>

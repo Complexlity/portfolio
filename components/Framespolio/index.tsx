@@ -5,7 +5,7 @@ import frames from "./data";
 const Framepolio = () => {
   return (
     <section
-      id="about"
+      id="framesfolio"
       className="mt-2 flex w-full items-center px-2"
     >
       <div className="grid gap-8">

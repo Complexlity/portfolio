@@ -12,7 +12,7 @@ export default function Frame({ frame, index }: { frame: FramesType, index: numb
             index % 2 === 1 ? "lg:flex-row-reverse" : "lg:flex-row"
           }`}
         >
-          <div className="] space-y-2 lg:w-1/2 text-center">
+          <div className="] space-y-2 text-center lg:w-1/2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
               {frame.title}
             </h2>
@@ -34,7 +34,7 @@ export default function Frame({ frame, index }: { frame: FramesType, index: numb
             width="800"
           />
         </div>
-        <hr className="my-2 bg-primary dark:bg-orange-300 outline:none border:none text-primary border-spacing-0 border-collapse py-[.5px]"/>
+        <hr className="outline:none border:none my-2 border-collapse border-spacing-0 bg-primary py-[.5px] text-primary dark:bg-orange-300" />
       </div>
     </>
   );
