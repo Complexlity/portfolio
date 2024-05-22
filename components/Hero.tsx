@@ -6,6 +6,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { useThemeContext } from "../Contexts/ThemeContext";
+import { SiFarcaster } from "react-icons/si";
 
 const Hero = () => {
   const theme = useThemeContext().darkMode;
@@ -44,15 +45,6 @@ const Hero = () => {
         <div className="grid justify-center">
           <div className="bg- mx-auto flex w-full content-center items-center gap-4 py-4 md:gap-6">
             <a
-              href="https://www.linkedin.com/in/nwalozie-elijah-306b33215/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className={iconsStyles}>
-                <FaLinkedinIn size={24} />
-              </div>
-            </a>
-            <a
               href="https://github.com/Complexlity"
               target="_blank"
               rel="noreferrer"
@@ -61,16 +53,32 @@ const Hero = () => {
                 <FaGithub size={24} />
               </div>
             </a>
+            <Link href="https://warpcast.com/complexlity">
+              <div className={iconsStyles}>
+                <SiFarcaster size={24} />
+
+              </div>
+            </Link>
+            <a
+              href="https://www.linkedin.com/in/nwalozie-elijah-306b33215/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className={iconsStyles}>
+                <FaLinkedinIn size={24} />
+              </div>
+            </a>
             <Link href="/#contact">
               <div className={iconsStyles}>
                 <AiOutlineMail size={24} />
               </div>
             </Link>
-            <Link href="#">
+            {/* <Link href="#">
               <div className={iconsStyles}>
                 <BsFillPersonLinesFill size={24} />
               </div>
-            </Link>
+            </Link> */}
+
           </div>
         </div>
       </div>
