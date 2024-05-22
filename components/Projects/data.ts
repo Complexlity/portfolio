@@ -97,17 +97,18 @@ const projects: ProjectsType[] = [
         },
         image: sketchApp,
 
-    },{
-        title: "Resume Builder",
-        technologies: ["ReactJs", "API", "TailwindCSS"],
-        description: "Resume Builder takes user information and creates a CV template with it. It also has the feature to generate dummy information",
-        links: {
-            live: "https://complexlity-resume-builder.netlify.app/",
-            code: "https://github.com/Complexlity/resume-builder.git"
-        },
-        image: resumeBuilder,
-
     },
+    // {
+    //     title: "Resume Builder",
+    //     technologies: ["ReactJs", "API", "TailwindCSS"],
+    //     description: "Resume Builder takes user information and creates a CV template with it. It also has the feature to generate dummy information",
+    //     links: {
+    //         live: "https://complexlity-resume-builder.netlify.app/",
+    //         code: "https://github.com/Complexlity/resume-builder.git"
+    //     },
+    //     image: resumeBuilder,
+
+    // },
     {
         title: "Weather App",
         technologies: ["Javascript", "TailwindCSS", "API"],
@@ -120,50 +121,50 @@ const projects: ProjectsType[] = [
 
     },
 
-    {
-        title: "Calculator",
-        technologies: ["Javascript"],
-        description: "Digital Calculator with all the basic arithmetic functions (addition, subtraction, division, multiplication, clear, delete, and zero-division error) ",
-        links: {
-            live: "https://complexlity-calculator.netlify.app/",
-            code: "https://github.com/Complexlity/Calculator"
-        },
-        image: calculator,
+    // {
+    //     title: "Calculator",
+    //     technologies: ["Javascript"],
+    //     description: "Digital Calculator with all the basic arithmetic functions (addition, subtraction, division, multiplication, clear, delete, and zero-division error) ",
+    //     links: {
+    //         live: "https://complexlity-calculator.netlify.app/",
+    //         code: "https://github.com/Complexlity/Calculator"
+    //     },
+    //     image: calculator,
 
-    },
-    {
-        title: "Task List",
-        technologies: ["Javascript"],
-        description: "Todo application with functions to add, edit and delete items",
-        links: {
-            live: "https://complexlity-task-list.netlify.app/",
-            code: "https://github.com/Complexlity/Task-List"
-        },
-        image: taskList,
+    // },
+    // {
+    //     title: "Task List",
+    //     technologies: ["Javascript"],
+    //     description: "Todo application with functions to add, edit and delete items",
+    //     links: {
+    //         live: "https://complexlity-task-list.netlify.app/",
+    //         code: "https://github.com/Complexlity/Task-List"
+    //     },
+    //     image: taskList,
 
-    },
-    {
-        title: "Form Validation",
-        technologies: ["Javascript"],
-        description: "Client-side from validation program for texts, email, phone number and password",
-        links: {
-            live: "https://complexlity-form-validation.netlify.app/",
-            code: "https://github.com/Complexlity/Form-Validation"
-        },
-        image: formValidation,
+    // },
+    // {
+    //     title: "Form Validation",
+    //     technologies: ["Javascript"],
+    //     description: "Client-side from validation program for texts, email, phone number and password",
+    //     links: {
+    //         live: "https://complexlity-form-validation.netlify.app/",
+    //         code: "https://github.com/Complexlity/Form-Validation"
+    //     },
+    //     image: formValidation,
 
-    },
-    {
-        title: "Tic Tac Toe",
-        technologies: ["Javascript"],
-        description: "An application similar to the real tic-tac-toe game and could be played by two players",
-        links: {
-            live: "https://complexlity-tic-tac-toe.netlify.app/",
-            code: "https://github.com/Complexlity/tic-tac-toe"
-        },
-        image: ticTacToe,
+    // },
+    // {
+    //     title: "Tic Tac Toe",
+    //     technologies: ["Javascript"],
+    //     description: "An application similar to the real tic-tac-toe game and could be played by two players",
+    //     links: {
+    //         live: "https://complexlity-tic-tac-toe.netlify.app/",
+    //         code: "https://github.com/Complexlity/tic-tac-toe"
+    //     },
+    //     image: ticTacToe,
 
-    }
+    // }
 ]
 
 export default projects
