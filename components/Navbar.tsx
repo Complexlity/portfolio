@@ -4,8 +4,11 @@ import { useEffect, useState } from "react";
 // import { BsFillSunFill, BsMoonFill } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
+import { LiaExternalLinkAltSolid } from "react-icons/lia";
 import ThemeSwitch from "./ThemeSwitch";
 // import { useThemeContext } from "../Contexts/ThemeContext";
+// const blogLink = "https://blog.complexlity.dev"
+const blogLink = "https://hashnode.com/@Complexlity"
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -89,6 +92,18 @@ const NavLinks = ({ animation, mobile }: navlinks) => {
       </a>
       <a href="#contact" className={linkStyles}>
         Contact
+      </a>
+      <a target="_blank" href={blogLink} className={linkStyles}>
+        <span className="flex gap-1 items-start">
+
+        <span>
+        Blog
+        </span>
+        <span>
+        <LiaExternalLinkAltSolid />
+        </span>
+      
+        </span>
       </a>
     </div>
   );
