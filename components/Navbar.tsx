@@ -93,7 +93,7 @@ const NavLinks = ({ animation, mobile }: navlinks) => {
       <a href="#contact" className={linkStyles}>
         Contact
       </a>
-      <a target="_blank" href={blogLink} className={linkStyles}>
+      <a target="_blank" rel="noreferrer"  href={blogLink} className={linkStyles}>
         <span className="flex gap-1 items-start">
 
         <span>

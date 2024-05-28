@@ -33,7 +33,7 @@ const About = () => {
               at{" "}
               <Link
                 href="https://www.pulsar-technologies.com/public/"
-                ttarget={"_blank"}
+                target={"_blank"}
                 rel="noreferrer"
                 className="text-primary hover:underline dark:text-orange-300"
               >
@@ -44,7 +44,7 @@ const About = () => {
               <br></br> In my spare time, I play some{" "}
               <Link
                 href="https://lichess.org/Complexlity"
-                ttarget={"_blank"}
+                target={"_blank"}
                 rel="noreferrer"
                 className="text-primary hover:underline dark:text-orange-300"
               >
@@ -53,7 +53,7 @@ const About = () => {
               as well as write{" "}
               <Link
                 href="https://blog.openreplay.com/authors/nwalozie-elijah/"
-                ttarget={"_blank"}
+                target={"_blank"}
                 rel="noreferrer"
                 className="text-primary hover:underline dark:text-orange-300"
               >
