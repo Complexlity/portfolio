@@ -17,7 +17,7 @@ const Navbar = () => {
   // const setDarkTheme = useThemeContext().setDarkMode;
 
   // function toggleTheme() {
-  //   setDarkTheme(!darkTheme);
+  //   setDarkTheme(!darkThem`e);
   // }
   useEffect(() => {
     const handleShadow = () => {
