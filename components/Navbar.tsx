@@ -34,7 +34,7 @@ const Navbar = () => {
   const navLook = shadow
     ? "dark:bg-darkBg bg-[#ecf0f3] shadow-primaryLight"
     : "";
-  const navTranslate = isOpen ? `0px` : `-20rem`;
+  const navTranslate = isOpen ? `0px` : `-22.9rem`;
   const animation = {
     transition: `all .5s ease-in-out`,
     transform: `translateY(${navTranslate})`,
@@ -95,7 +95,6 @@ const NavLinks = ({ animation, mobile }: navlinks) => {
       </a>
       <a target="_blank" rel="noreferrer"  href={blogLink} className={linkStyles}>
         <span className="flex gap-1 items-start">
-
         <span>
         Blog
         </span>
