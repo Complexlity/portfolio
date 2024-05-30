@@ -27,7 +27,7 @@ const projects: ProjectsType[] = [
     {
         title: "Blog Platform",
         technologies: ["Nextjs", "express", "Nodejs", "MongoDB", "AWS", "TailwindCSS"],
-        description: "A place to write and share content with rich text editor offering smooth experience",
+        description: "A place to write and share content with rich text editor offering smooth experience and markdown upload support",
         links: {
             live: "https://blog.complexlity.dev",
             code: "https://github.com/Complexlity/blog-client"
