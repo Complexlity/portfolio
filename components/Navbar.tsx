@@ -7,8 +7,8 @@ import Image from "next/image";
 import { LiaExternalLinkAltSolid } from "react-icons/lia";
 import ThemeSwitch from "./ThemeSwitch";
 // import { useThemeContext } from "../Contexts/ThemeContext";
-// const blogLink = "https://blog.complexlity.dev"
-const blogLink = "https://hashnode.com/@Complexlity"
+const blogLink = "https://blog.complexlity.dev"
+// const blogLink = "https://hashnode.com/@Complexlity"
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
