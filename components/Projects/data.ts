@@ -29,7 +29,7 @@ const projects: ProjectsType[] = [
         technologies: ["Nextjs", "express", "Nodejs", "MongoDB", "AWS", "TailwindCSS"],
         description: "A place to write and share content with rich text editor offering smooth experience",
         links: {
-            live: "https://complexlity-blog.vercel.app",
+            live: "https://blog.complexlity.dev",
             code: "https://github.com/Complexlity/blog-client"
         },
         image: blogPlatform
