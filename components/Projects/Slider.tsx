@@ -87,11 +87,11 @@ const Card: FC<CardsProps> = ({ card }) => {
         </div>
         <p className=" dark:text-gray-200">{card.description}</p>
         <div className="flex  flex-1 items-end gap-8 justify-self-end">
-          <Link href={card.links.code} target={"_blank"}>
+          {card.links.code ? <Link href={card.links.code} target={"_blank"}>
             <Button text={"CODE"}>
               <AiFillGithub className="mt-[.1rem]" />
             </Button>
-          </Link>
+          </Link> : null}
           <Link href={card.links.live} target={"_blank"}>
             <Button text={"LIVE"}>
               <TbWorld className="mt-[.1rem]" />

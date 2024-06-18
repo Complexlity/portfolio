@@ -16,15 +16,26 @@ import blogPlatform from './assets/blog-platform.png'
 import { StaticImageData } from "next/image"
 
 export interface ProjectsType {
-    image: StaticImageData
+    image: StaticImageData | string,
     title: string
     technologies: string[]
     description: string
-    links: { live: string, code: string }
+    links: { live: string, code?: string }
 }
 
 const projects: ProjectsType[] = [
     {
+
+        title: "The Network State",
+        technologies: ["Nextjs", "TailwindCSS", "Airtable", "CDN", "Canny",],
+        description: "The fully online version of The \"Network State\" book built for the author of the book to aid the digital distribution.",
+        links: {
+            live: "https://thenetworkstate.com/",
+        },
+        image: "https://i.ibb.co/SKTZ9ZL/thenetworkstate.png"
+    },
+    {
+        
         title: "Blog Platform",
         technologies: ["Nextjs", "express", "Nodejs", "MongoDB", "AWS", "TailwindCSS"],
         description: "A place to write and share content with rich text editor offering smooth experience and markdown upload support",
