@@ -36,11 +36,10 @@ const Hero = () => {
               Complexlity
             </span>
           </h1>
-          <h1>A Full Stack Developer</h1>
+          <h1></h1>
         </div>
         <p className="mx-auto w-full max-w-[45ch] md:m-0 md:max-w-[65ch]">
-          I am focused on building responsive and accessiblity compliant web
-          applications and integrating APIs and back-end technologies .
+          A Software Engineer building the applications you would need. Reach out on any off my socials. 
         </p>
         <div className="grid justify-center">
           <div className="bg- mx-auto flex w-full content-center items-center gap-4 py-4 md:gap-6">

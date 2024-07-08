@@ -19,17 +19,16 @@ const About = () => {
             ch] justify-start"
           >
             <p className="py-2 text-gray-600 dark:text-gray-100">
-              I specialize in building mobile responsive front-end UI
-              applications that connect with API's and other backend. My primary
-              skills involve using HTML, CSS, JavaScript (or TypeScript),
+              My primary
+              skills involve using Typescript,
               ReactJs and Nodejs to build good and scalable applications and
-              while also inculcating any necessary technology required to bring
-              ideas to life technologies. I'm enthusiastic about learning new
+              while also adding any necessary technology required to bring
+              ideas to life. I'm enthusiastic about learning new
               technology and I am a quick learner who can always pick new tech
               stacks as needed.
             </p>
             <p className="py-2 text-gray-600 dark:text-gray-100">
-              I started web development in 2021, and currently breaking things
+              Currently breaking things
               at{" "}
               <Link
                 href="https://www.pulsar-technologies.com/public/"
@@ -39,8 +38,6 @@ const About = () => {
               >
                 Pulsar Technologies.
               </Link>{" "}
-              <br></br>I have experience working directly with clients and
-              ensure that every assignment is carried out as specified.{" "}
               <br></br> In my spare time, I play some{" "}
               <Link
                 href="https://lichess.org/Complexlity"
@@ -57,19 +54,10 @@ const About = () => {
                 rel="noreferrer"
                 className="text-primary hover:underline dark:text-orange-300"
               >
-                technical articles
+                technical articles.
               </Link>{" "}
             </p>
-            <p className="py-2 text-gray-600 dark:text-gray-100">
-              I am open to working on Web based projects involving Reactjs or
-              Nodejs. Do{" "}
-              <a
-                href="#contact"
-                className="text-primary hover:underline dark:text-orange-300"
-              >
-                send me a message
-              </a>{" "}
-            </p>
+            
           </div>
         </div>
       </div>
