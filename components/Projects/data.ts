@@ -51,8 +51,8 @@ const projects: ProjectsType[] = [
         technologies: ["Nextjs", "RainbowKit", "Formik/Yup","TailwindCSS"],
         description: "A place to mint, showcase and sell your creative NFTs and beautiful Arts",
         links: {
-            live: "https://creative-art-marketplace.vercel.app",
-            code: "https://github.com/Complexlity/creative-art-marketplace"
+            live: "https://www.creativearts.app/",
+            // code: "https://github.com/Complexlity/creative-art-marketplace"
         },
         image: creativeArtMarketplace
 
