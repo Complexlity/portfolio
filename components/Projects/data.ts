@@ -63,7 +63,7 @@ const projects: ProjectsType[] = [
         technologies: ["ReactJs", "Docusaurus",],
         description: "Fully functioning documentation page for stackup",
         links: {
-            live: "https://stackdocs.netlify.app/",
+            live: "https://stackdocs.app/",
             code: "https://github.com/Complexlity/stackdocs"
         },
         image: stackdocs,
@@ -71,7 +71,7 @@ const projects: ProjectsType[] = [
     }, {
         title: "Personal Portfolio",
         technologies: ["NextJs", "Typescript", "Context API", "nodemailer", "TailwindCSS"],
-        description: "This portfolio showing my skill, projects and contact",
+        description: "This portfolio showing some projects I built and contact",
         links: {
             live: "/",
             code: "https://github.com/Complexlity/portfolio"
