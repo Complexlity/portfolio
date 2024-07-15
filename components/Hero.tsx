@@ -38,12 +38,12 @@ const Hero = () => {
           </h1>
           <h1></h1>
         </div>
-        <p className="mx-auto w-full max-w-[45ch] md:m-0 md:max-w-[65ch]">
+        <p className="description mx-auto w-full max-w-[45ch] md:m-0 md:max-w-[65ch]">
           A Software Engineer building the applications you would need. Reach out on any off my socials. 
         </p>
         <div className="grid justify-center">
           <div className="bg- mx-auto flex w-full content-center items-center gap-4 py-4 md:gap-6">
-            <a
+            <Link
               href="https://github.com/Complexlity"
               target="_blank"
               rel="noreferrer"
@@ -51,14 +51,14 @@ const Hero = () => {
               <div className={iconsStyles}>
                 <FaGithub size={24} />
               </div>
-            </a>
+            </Link>
             <Link href="https://warpcast.com/complexlity">
               <div className={iconsStyles}>
                 <SiFarcaster size={24} />
 
               </div>
             </Link>
-            <a
+            <Link
               href="https://www.linkedin.com/in/nwalozie-elijah-306b33215/"
               target="_blank"
               rel="noreferrer"
@@ -66,7 +66,7 @@ const Hero = () => {
               <div className={iconsStyles}>
                 <FaLinkedinIn size={24} />
               </div>
-            </a>
+            </Link>
             <Link href="/#contact">
               <div className={iconsStyles}>
                 <AiOutlineMail size={24} />

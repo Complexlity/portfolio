@@ -15,7 +15,7 @@ const About = () => {
             Who I Am
           </h3>
           <div
-            className="max-w-[70ch] justify-start"
+            className="description max-w-[70ch] justify-start"
           >
             <p className="py-2 text-gray-600 dark:text-gray-100">
               My primary

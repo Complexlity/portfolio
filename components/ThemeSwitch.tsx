@@ -24,7 +24,9 @@ const ThemeSwitch: FC<Props> = () => {
     return setTheme("dark");
   }
   return (
-    <div
+    <button
+      aria-label='Toggle Dark Mode'
+      type="button"
       onClick={toggleTheme}
       className="fixed bottom-4 right-8 rounded-full bg-primary/70 p-3 dark:bg-gray-500/90 md:static md:block md:rounded-none md:bg-inherit md:dark:bg-inherit"
     >
@@ -34,7 +36,7 @@ const ThemeSwitch: FC<Props> = () => {
       {theme === "dark" ? (
         <BsMoonFill className="h-6 w-6 scale-[90%] cursor-pointer text-amber-200" />
       ) : null}
-    </div>
+    </button>
   );
 };
 
