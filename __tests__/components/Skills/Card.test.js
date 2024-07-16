@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import Card from '../../components/Skills//Card';
+import Card from '../../../components/Skills/Card';
 
 describe('Card', () => {
   const item = {

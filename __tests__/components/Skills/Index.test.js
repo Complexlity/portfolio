@@ -1,8 +1,8 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Skills from '../../components/Skills';
-import { skills } from '../../components/Skills/data'
+import Skills from '../../../components/Skills';
+import { skills } from '../../../components/Skills/data'
 
 describe('Skills Component', () => {
     let container
