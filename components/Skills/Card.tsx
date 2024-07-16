@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FC } from "react";
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
 const Card: FC<Props> = ({ item }) => {
   return (
     <div className="mygrid mt-4 flex flex-col gap-2 ">
-      <img
+      <Image
         className="h-full w-full object-contain"
         src={item.image}
         alt={item.title}
