@@ -51,4 +51,4 @@ export const skills = [
         image: joomlaImg,
         title: "Joomla"
     },
-]
+] 
