@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { sendContactForm } from "../mail-files/sendForm";
+import { submitContactForm } from "../mail-files/sendForm";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRef } from "react";
@@ -50,7 +50,7 @@ const Contact = () => {
     notify();
     let res: result;
     try {
-      let value = await sendContactForm(values);
+      let value = await submitContactForm(values);
       res = await value.json();
     } catch (error) {
       res = { success: false, message: "Something went wrong 😢" };
@@ -101,29 +101,33 @@ const Contact = () => {
             onChange={(e) => updateValues(0, e.target?.value)}
             className=""
             type="text"
+            aria-label="name"
             id="name"
             placeholder="Name"
             required
-          />
+            />
           <input
             onChange={(e) => updateValues(1, e.target?.value)}
             className=""
+            aria-label="email"
             type="email"
             placeholder="Email"
             value={values.email}
             required
-          />
+            />
           <input
             onChange={(e) => updateValues(2, e.target?.value)}
             className=""
+            aria-label="subject"
             type="text"
             placeholder="Subject"
             value={values.subject}
             required
-          />
+            />
           <textarea
             onChange={(e) => updateValues(3, e.target?.value)}
             className=""
+            aria-label="message"
             name="message"
             placeholder="Message"
             id="message"
@@ -134,19 +138,23 @@ const Contact = () => {
           ></textarea>
           <div className="mx-auto w-full max-w-[400px] text-center">
             {!loading ? (
-              <button className="md:text-md w-full   rounded-[2rem] bg-primary px-2 py-[.8rem] uppercase  text-gray-100 hover:bg-primaryLight dark:bg-orange-300 dark:text-[80%] dark:font-semibold dark:text-black hover:dark:bg-orange-500   md:tracking-wide">
+              <button
+                className="md:text-md w-full   rounded-[2rem] bg-primary px-2 py-[.8rem] uppercase  text-gray-100 hover:bg-primaryLight dark:bg-orange-300 dark:text-[80%] dark:font-semibold dark:text-black hover:dark:bg-orange-500   md:tracking-wide">
                 {" "}
                 Send Message
               </button>
             ) : (
               <button
-                disabled
+                  disabled
+                  aria-label="disabled_button"
                 className="md:text-md w-full   rounded-[2rem] bg-primaryLight px-2 py-[.8rem] uppercase  text-gray-100 hover:bg-primaryLight dark:bg-orange-300 dark:text-[80%] dark:font-semibold dark:text-black hover:dark:bg-orange-500   md:tracking-wide"
               >
                 {" "}
                 <span className="loader ld-ext-right running flex items-center justify-center">
                   <span>Sending</span>{" "}
-                  <span className="ld ld-ring ld-spin ml-2"></span>{" "}
+                    <span
+                    data-testid="loader"
+                      className="ld ld-ring ld-spin ml-2"></span>{" "}
                 </span>
               </button>
             )}
