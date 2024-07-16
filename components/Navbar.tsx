@@ -45,7 +45,10 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between">
         <Link href={"/"} className="block w-10 md:w-12">
-          <Image className="max-h-full w-auto" src={complexIcon} alt="Logo" />
+          <Image
+            width={50}
+            height={50}
+            className="max-h-full w-auto" src={complexIcon} alt="Logo" />
         </Link>
         <div className="md:hidden">
           <Hamburger toggled={isOpen} toggle={setOpen} />
