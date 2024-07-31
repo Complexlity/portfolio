@@ -69,6 +69,8 @@ const Card: FC<CardsProps> = ({ card }) => {
           width={200}
           height={400}
           priority
+          placeholder="blur"
+          loading="lazy"
         />
       </div>
       <div className="flex flex-1 flex-col gap-2 py-2 px-6">
