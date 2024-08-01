@@ -68,7 +68,6 @@ const Card: FC<CardsProps> = ({ card }) => {
           alt="projectImage"
           width={200}
           height={400}
-          priority
           placeholder="blur"
           loading="lazy"
         />
