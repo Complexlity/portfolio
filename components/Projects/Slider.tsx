@@ -66,8 +66,6 @@ const Card: FC<CardsProps> = ({ card }) => {
           className="w-full object-contain"
           src={card.image}
           alt="projectImage"
-          width={200}
-          height={400}
           priority
         />
       </div>

@@ -1,17 +1,13 @@
-import portfolio from "./assets/portfolio.png";
+import blogPlatform from "./assets/blog-platform.png";
+import creativeArtMarketplace from "./assets/creative-art-marketplace.png";
 import onlineStore from "./assets/e-commerce-site.png";
-import memoryGame from "./assets/memory-game.png";
 import sketchApp from "./assets/etch-a-sketch.png";
-import weatherApp from "./assets/weather-app.png";
-import resumeBuilder from "./assets/resume-builder.png";
-import taskList from "./assets/task-list.png";
-import formValidation from "./assets/form-validation.png";
-import calculator from "./assets/calculator.png";
-import ticTacToe from "./assets/tic-tac-toe.png";
+import memoryGame from "./assets/memory-game.png";
+import portfolio from "./assets/portfolio.png";
 import stackdocs from "./assets/stackdocs.png";
 import theNetworkState from "./assets/the-network-state.png";
-import creativeArtMarketplace from "./assets/creative-art-marketplace.png";
-import blogPlatform from "./assets/blog-platform.png";
+import weatherApp from "./assets/weather-app.png";
+import uniFarcasterSDK from "./assets/uni-farcaster-sdk.png";
 
 // Image component for the nextjs Image component. See Card.tsx for the <Image /> component in use
 import { StaticImageData } from "next/image";
@@ -25,6 +21,18 @@ export interface ProjectsType {
 }
 
 const projects: ProjectsType[] = [
+  {
+    title: "Uni Farcaster SDK",
+    technologies: ["Typescript", "Nodejs", "Npm"],
+    description: "An sdk the combines the services of neynar and airstack with top features and a single API for data retrieval from the farcaster protocol",
+    links: {
+      code: "https://github.com/Complexlity/uni-farcaster-sdk",
+      live: "https://www.npmjs.com/package/uni-farcaster-sdk"
+    },
+    image: uniFarcasterSDK,
+
+  },
+  
   {
     title: "The Network State",
     technologies: ["Nextjs", "TailwindCSS", "Airtable", "CDN", "Canny"],
