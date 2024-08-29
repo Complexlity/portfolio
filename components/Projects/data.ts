@@ -27,7 +27,7 @@ const projects: ProjectsType[] = [
     description: "An sdk the combines the services of neynar and airstack with top features and a single API for data retrieval from the farcaster protocol",
     links: {
       code: "https://github.com/Complexlity/uni-farcaster-sdk",
-      live: "https://www.npmjs.com/package/uni-farcaster-sdk"
+      live: "https://uni-farcaster-sdk.vercel.app/"
     },
     image: uniFarcasterSDK,
 
