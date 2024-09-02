@@ -7,6 +7,7 @@ import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { useThemeContext } from "../Contexts/ThemeContext";
 import { SiFarcaster } from "react-icons/si";
+import { FaCalendarAlt } from "react-icons/fa";
 
 const Hero = () => {
   const theme = useThemeContext().darkMode;
@@ -39,7 +40,8 @@ const Hero = () => {
           <h1></h1>
         </div>
         <p className="description mx-auto w-full max-w-[45ch] md:m-0 md:max-w-[65ch]">
-          A Software Engineer building the applications you would need. Reach out on any off my socials. 
+          A Software Engineer building the applications and tools. Reach out on
+          any off my socials.
         </p>
         <div className="grid justify-center">
           <div className="bg- mx-auto flex w-full content-center items-center gap-4 py-4 md:gap-6">
@@ -52,10 +54,13 @@ const Hero = () => {
                 <FaGithub size={24} />
               </div>
             </Link>
-            <Link href="https://warpcast.com/complexlity">
+            <Link
+              href="https://warpcast.com/complexlity"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className={iconsStyles}>
                 <SiFarcaster size={24} />
-
               </div>
             </Link>
             <Link
@@ -65,6 +70,15 @@ const Hero = () => {
             >
               <div className={iconsStyles}>
                 <FaLinkedinIn size={24} />
+              </div>
+            </Link>
+            <Link
+              href="https://cal.com/complexlity/30min"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className={iconsStyles}>
+                <FaCalendarAlt size={24} />
               </div>
             </Link>
             <Link href="/#contact">
@@ -77,7 +91,6 @@ const Hero = () => {
                 <BsFillPersonLinesFill size={24} />
               </div>
             </Link> */}
-
           </div>
         </div>
       </div>
