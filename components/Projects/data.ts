@@ -24,9 +24,15 @@ export interface ProjectsType {
 const projects: ProjectsType[] = [
   {
     title: "Farcaster Block Bot",
-    technologies: ["Typescript", "redis", "farcaster", "cron"],
+    technologies: [
+      "uni-farcaster-sdk",
+      "Typescript",
+      "redis",
+      "farcaster",
+      "cron",
+    ],
     description:
-      "This bot broadcasts on the farcaster network each time a user is blocked by another user. Built with unifarcaster-sdk",
+      "This bot broadcasts on the farcaster network each time a user is blocked by another user",
     links: {
       code: "https://github.com/Complexlity/fc-block-bot",
       live: "https://warpcast.com/blockbot",
