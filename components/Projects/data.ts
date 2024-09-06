@@ -8,6 +8,7 @@ import stackdocs from "./assets/stackdocs.png";
 import theNetworkState from "./assets/the-network-state.png";
 import weatherApp from "./assets/weather-app.png";
 import uniFarcasterSDK from "./assets/uni-farcaster-sdk.png";
+import fcBlockBot from "./assets/fc-block-bot.png";
 
 // Image component for the nextjs Image component. See Card.tsx for the <Image /> component in use
 import { StaticImageData } from "next/image";
@@ -22,17 +23,28 @@ export interface ProjectsType {
 
 const projects: ProjectsType[] = [
   {
+    title: "Farcaster Block Bot",
+    technologies: ["Typescript", "redis", "farcaster", "cron"],
+    description:
+      "This bot broadcasts on the farcaster network each time a user is blocked by another user. Built with unifarcaster-sdk",
+    links: {
+      code: "https://github.com/Complexlity/fc-block-bot",
+      live: "https://warpcast.com/blockbot",
+    },
+    image: fcBlockBot,
+  },
+  {
     title: "Uni Farcaster SDK",
     technologies: ["Typescript", "Nodejs", "Npm"],
-    description: "An sdk the combines the services of neynar and airstack with top features and a single API for data retrieval from the farcaster protocol",
+    description:
+      "An sdk the combines the services of neynar and airstack with top features and a single API for data retrieval from the farcaster protocol",
     links: {
       code: "https://github.com/Complexlity/uni-farcaster-sdk",
-      live: "https://uni-farcaster-sdk.vercel.app/"
+      live: "https://uni-farcaster-sdk.vercel.app/",
     },
     image: uniFarcasterSDK,
-
   },
-  
+
   {
     title: "The Network State",
     technologies: ["Nextjs", "TailwindCSS", "Airtable", "CDN", "Canny"],
@@ -100,23 +112,23 @@ const projects: ProjectsType[] = [
     },
     image: portfolio,
   },
-  {
-    title: "Online Store",
-    technologies: ["ReactJs", "Typescript", "Redux", "TailwindCSS"],
-    description: "An e commerce application with routing and cart function",
-    links: {
-      live: "https://complexlity-ecommerce-site.vercel.app/",
-      code: "https://github.com/Complexlity/eCommerce-site",
-    },
-    image: onlineStore,
-  },
+  // {
+  //   title: "Online Store",
+  //   technologies: ["ReactJs", "Typescript", "Redux", "TailwindCSS"],
+  //   description: "An e commerce application with routing and cart function",
+  //   links: {
+  //     live: "https://complexlity-ecommerce-site.vercel.app/",
+  //     code: "https://github.com/Complexlity/eCommerce-site",
+  //   },
+  //   image: onlineStore,
+  // },
   {
     title: "Memory Game",
     technologies: ["ReactJs", "firebase", "Framer Motion", "TailwindCSS"],
     description:
       "Memory game is a application that tends to test retentive memory. It also saves the users score on the cloud",
     links: {
-      live: "https://complexlity-memory-game.netlify.app/",
+      live: "https://complexlity-beta-memory-game.netlify.app/",
       code: "https://github.com/Complexlity/memory-game",
     },
     image: memoryGame,
