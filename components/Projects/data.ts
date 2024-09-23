@@ -161,17 +161,17 @@ const projects: ProjectsType[] = [
   //     image: resumeBuilder,
 
   // },
-  {
-    title: "Weather App",
-    technologies: ["Javascript", "TailwindCSS", "API"],
-    description:
-      "An application to get the weather of any location. It uses the user's location as default",
-    links: {
-      live: "https://complexlity-weather-app.netlify.app/",
-      code: "https://github.com/Complexlity/weather-app",
-    },
-    image: weatherApp,
-  },
+  // {
+  //   title: "Weather App",
+  //   technologies: ["Javascript", "TailwindCSS", "API"],
+  //   description:
+  //     "An application to get the weather of any location. It uses the user's location as default",
+  //   links: {
+  //     live: "https://complexlity-weather-app.netlify.app/",
+  //     code: "https://github.com/Complexlity/weather-app",
+  //   },
+  //   image: weatherApp,
+  // },
 
   // {
   //     title: "Calculator",
