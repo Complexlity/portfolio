@@ -98,7 +98,7 @@ const projects: ProjectsType[] = [
     description: "Fully functioning documentation page for stackup",
     links: {
       live: "https://stackdocs.app/",
-      code: "https://github.com/Complexlity/stackdocs",
+      // code: "https://github.com/Complexlity/stackdocs",
     },
     image: stackdocs,
   },
