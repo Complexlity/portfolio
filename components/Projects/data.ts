@@ -9,6 +9,7 @@ import theNetworkState from "./assets/the-network-state.png";
 import weatherApp from "./assets/weather-app.png";
 import uniFarcasterSDK from "./assets/uni-farcaster-sdk.png";
 import fcBlockBot from "./assets/fc-block-bot.png";
+import bountychain from "./assets/bountychain.png";
 
 // Image component for the nextjs Image component. See Card.tsx for the <Image /> component in use
 import { StaticImageData } from "next/image";
@@ -22,6 +23,16 @@ export interface ProjectsType {
 }
 
 const projects: ProjectsType[] = [
+  {
+    title: "Bountychain",
+    technologies: ["Nextjs", "Tailwindcss", "drizzle", "viem"],
+    description:
+      "An fully decentralized p2p platform that lets you create bounties and manage them on the blockchain. Deployed on the arbitrum chain",
+    links: {
+      live: "https://www.bountychain.xyz",
+    },
+    image: bountychain,
+  },
   {
     title: "Farcaster Block Bot",
     technologies: [
