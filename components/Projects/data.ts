@@ -25,7 +25,14 @@ export interface ProjectsType {
 const projects: ProjectsType[] = [
   {
     title: "Bountychain",
-    technologies: ["Nextjs", "Tailwindcss", "drizzle", "viem"],
+    technologies: [
+      "Nextjs",
+      "Tailwindcss",
+      "drizzle",
+      "wagmi",
+      "viem",
+      "rainbowkit",
+    ],
     description:
       "An fully decentralized p2p platform that lets you create bounties and manage them on the blockchain. Deployed on the arbitrum chain",
     links: {
@@ -38,8 +45,9 @@ const projects: ProjectsType[] = [
     technologies: [
       "uni-farcaster-sdk",
       "Typescript",
-      "redis",
       "farcaster",
+      "redis",
+      "viem",
       "cron",
     ],
     description:
