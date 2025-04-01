@@ -10,6 +10,7 @@ import weatherApp from "./assets/weather-app.png";
 import uniFarcasterSDK from "./assets/uni-farcaster-sdk.png";
 import fcBlockBot from "./assets/fc-block-bot.png";
 import bountychain from "./assets/bountychain.png";
+import framesGallery from "./assets/frames-gallery.png";
 
 // Image component for the nextjs Image component. See Card.tsx for the <Image /> component in use
 import { StaticImageData } from "next/image";
@@ -49,9 +50,10 @@ const projects: ProjectsType[] = [
       "redis",
       "viem",
       "cron",
+      
     ],
     description:
-      "This bot broadcasts on the farcaster network each time a user is blocked by another user",
+      "This bot broadcasts on the Farcaster network each time a user is blocked by another user",
     links: {
       code: "https://github.com/Complexlity/fc-block-bot",
       live: "https://warpcast.com/blockbot",
@@ -60,9 +62,9 @@ const projects: ProjectsType[] = [
   },
   {
     title: "Uni Farcaster SDK",
-    technologies: ["Typescript", "Nodejs", "Npm"],
+    technologies: ["Typescript", "Nodejs", "npm", "Farcaster"],
     description:
-      "An sdk the combines the services of neynar and airstack with top features and a single API for data retrieval from the farcaster protocol",
+      "An sdk the combines the services of Neynar and Airstack with top features and a single API for data retrieval from the farcaster protocol",
     links: {
       code: "https://github.com/Complexlity/uni-farcaster-sdk",
       live: "https://uni-farcaster-sdk.vercel.app/",
@@ -81,6 +83,17 @@ const projects: ProjectsType[] = [
     image: theNetworkState,
   },
   {
+    title: "Farcaster Frames Gallery",
+    technologies: ["Nextjs", "React", "TailwindCSS", "Redis", "Farcaster"],
+    description: "Convert images into farcaster frames in just a few seconds that could be viewed directly on warpcast",
+    links: {
+      live: "https://frames-gallery.vercel.app/",
+      code: "https://github.com/Complexlity/image-gallery-frame"
+    },
+    image: framesGallery
+    
+},
+  {
     title: "Blog Platform",
     technologies: [
       "Nextjs",
@@ -98,7 +111,7 @@ const projects: ProjectsType[] = [
     },
     image: blogPlatform,
   },
-
+  
   {
     title: "Creative Arts Marketplace",
     technologies: ["Nextjs", "RainbowKit", "Formik/Yup", "TailwindCSS"],
