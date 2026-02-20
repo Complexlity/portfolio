@@ -84,6 +84,17 @@ const NavLinks = ({ animation, mobile }: navlinks) => {
       <a href="#hero" className={linkStyles}>
         Home
       </a>
+      <a target="_blank" rel="noreferrer" href={blogLink} className={linkStyles}>
+        <span className="flex gap-1 items-start">
+          <span>
+            Blog
+          </span>
+          <span>
+            <LiaExternalLinkAltSolid />
+          </span>
+
+        </span>
+      </a>
       <a href="#about" className={linkStyles}>
         About
       </a>
@@ -96,17 +107,7 @@ const NavLinks = ({ animation, mobile }: navlinks) => {
       <a href="#contact" className={linkStyles}>
         Contact
       </a>
-      <a target="_blank" rel="noreferrer"  href={blogLink} className={linkStyles}>
-        <span className="flex gap-1 items-start">
-        <span>
-        Blog
-        </span>
-        <span>
-        <LiaExternalLinkAltSolid />
-        </span>
-      
-        </span>
-      </a>
+
     </div>
   );
 };
