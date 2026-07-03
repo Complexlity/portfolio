@@ -9,19 +9,14 @@ const Earnings = () => {
 
   const earnings = [
     {
-      title: "Hackathon Win",
-      description: "First place winner at the annual developer hackathon",
-      link: "https://example.com/hackathon",
+      title: "Bountycaster Profile",
+      description: "My bountycaster profile showing some projects I worked on",
+      link: "https://www.bountycaster.xyz/fid/213144/completed-bounties",
     },
     {
-      title: "Freelance Project",
-      description: "Full-stack web development for a startup",
-      link: "https://example.com/freelance",
-    },
-    {
-      title: "Open Source Bounty",
-      description: "Security bug bounty contribution",
-      link: "https://example.com/bounty",
+      title: "Technical Articles",
+      description: "My technical articles and blog posts on open replay blog",
+      link: "https://blog.openreplay.com/authors/nwalozie-elijah/",
     },
   ];
 
