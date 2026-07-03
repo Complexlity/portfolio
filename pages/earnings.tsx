@@ -10,16 +10,21 @@ const Earnings = () => {
   const earnings = [
     {
       title: "Bountycaster Profile",
-      description: "My bountycaster profile showing some projects I worked on",
+      description: "My bountycaster profile showing some projects I worked and earned",
       link: "https://www.bountycaster.xyz/fid/213144/completed-bounties",
     },
     {
-      title: "Technical Articles",
+      title: "OpenReplay Blog",
       description: "My technical articles and blog posts on open replay blog",
       link: "https://blog.openreplay.com/authors/nwalozie-elijah/",
     },
+    {
+      title: "Sololearn Profile",
+      description: "My sololearn profile showing my learnings",
+      link: "https://www.sololearn.com/en/profile/7680940",
+    },
+    
   ];
-
   return (
     <>
       <Head>
