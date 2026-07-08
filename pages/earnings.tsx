@@ -15,7 +15,7 @@ const Earnings = () => {
     },
     {
       title: "OpenReplay Blog",
-      description: "My technical articles and blog posts on open replay blog",
+      description: "My technical articles and blog posts published on the official open replay blog",
       link: "https://blog.openreplay.com/authors/nwalozie-elijah/",
     },
     {
@@ -23,7 +23,16 @@ const Earnings = () => {
       description: "My sololearn profile showing my learnings",
       link: "https://www.sololearn.com/en/profile/7680940",
     },
-    
+    {
+      title: "GitHub Profile",
+      description: "My personal github profile",
+      link: "https://github.com/Complexlity",
+    },
+    {
+      title: "Turnkey Challenge Twitter",
+      description: "A bounty I won building on turnkey",
+      link: "https://x.com/turnkeyhq/status/1887592837346435585?s=20",
+    },
   ];
   return (
     <>
