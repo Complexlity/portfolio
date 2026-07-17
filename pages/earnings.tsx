@@ -52,7 +52,7 @@ const Earnings = () => {
                     Earnings
                   </h2>
                   <h3 className="py-4 font-raleway text-3xl font-semibold dark:text-gray-200">
-                    My Achievements & Income
+                    Support Links to Earnings and Platform Profiles
                   </h3>
                   <div className="mt-6 space-y-4">
                     {earnings.map((earning, index) => (
