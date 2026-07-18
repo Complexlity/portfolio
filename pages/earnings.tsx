@@ -71,16 +71,18 @@ const Earnings = () => {
                         </p>
                         <div className="mt-4 space-y-2">
                           {earning.links.map((link, linkIndex) => (
-                            <a
-                              key={linkIndex}
-                              href={link}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="inline-block text-primary hover:underline dark:text-orange-300"
-                            >
-                              Link {linkIndex > 0 ? linkIndex + 1 : ""} →
-                            </a>
-                            <br />
+                            <>
+                              <a
+                                key={linkIndex}
+                                href={link}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="inline-block text-primary hover:underline dark:text-orange-300"
+                              >
+                                Link {linkIndex > 0 ? linkIndex + 1 : ""} →
+                              </a>
+                              <br />
+                            </>
                           ))}
                         </div>
                       </div>
