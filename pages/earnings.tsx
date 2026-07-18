@@ -28,6 +28,11 @@ const Earnings = () => {
       description: "My personal github profile",
       links: ["https://github.com/Complexlity"],
     },
+   {
+      title: "Turnkey Challenge Twitter",
+      description: "A bounty I won building on turnkey",
+      link: "https://x.com/turnkeyhq/status/1887592837346435585?s=20",
+    },
   {
     title: "Stackup Hackathon Win",
     description: "Hack challenges I won on stackup",
