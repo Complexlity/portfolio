@@ -78,7 +78,7 @@ const Earnings = () => {
                               rel="noreferrer"
                               className="inline-block text-primary hover:underline dark:text-orange-300"
                             >
-                              View Proof {linkIndex > 0 ? linkIndex + 1 : ""} →
+                              Link {linkIndex > 0 ? linkIndex + 1 : ""} →
                             </a>
                             <br />
                           ))}
