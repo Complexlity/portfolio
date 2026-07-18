@@ -11,27 +11,30 @@ const Earnings = () => {
     {
       title: "Bountycaster Profile",
       description: "My bountycaster profile showing some projects I worked and earned",
-      link: "https://www.bountycaster.xyz/fid/213144/completed-bounties",
+      links: ["https://www.bountycaster.xyz/fid/213144/completed-bounties"],
     },
     {
       title: "OpenReplay Blog",
       description: "My technical articles and blog posts published on the official open replay blog",
-      link: "https://blog.openreplay.com/authors/nwalozie-elijah/",
+      links: ["https://blog.openreplay.com/authors/nwalozie-elijah/"],
     },
     {
       title: "Sololearn Profile",
       description: "My sololearn profile showing my learnings",
-      link: "https://www.sololearn.com/en/profile/7680940",
+      links: ["https://www.sololearn.com/en/profile/7680940"],
     },
     {
       title: "GitHub Profile",
       description: "My personal github profile",
-      link: "https://github.com/Complexlity",
+      links: ["https://github.com/Complexlity"],
     },
     {
       title: "Turnkey Challenge Twitter",
       description: "A bounty I won building on turnkey",
-      link: "https://x.com/turnkeyhq/status/1887592837346435585?s=20",
+      links: [
+        "https://x.com/turnkeyhq/status/1887592837346435585?s=20",
+        "https://x.com/StackUpHQ/status/1806243708402127293?s=20",
+      ],
     },
   ];
   return (
@@ -66,14 +69,19 @@ const Earnings = () => {
                         <p className="mt-2 text-gray-600 dark:text-gray-300">
                           {earning.description}
                         </p>
-                        <a
-                          href={earning.link}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="mt-4 inline-block text-primary hover:underline dark:text-orange-300"
-                        >
-                          View Proof →
-                        </a>
+                        <div className="mt-4 space-y-2">
+                          {earning.links.map((link, linkIndex) => (
+                            <a
+                              key={linkIndex}
+                              href={link}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="inline-block text-primary hover:underline dark:text-orange-300"
+                            >
+                              View Proof {linkIndex > 0 ? linkIndex + 1 : ""} →
+                            </a>
+                          ))}
+                        </div>
                       </div>
                     ))}
                   </div>
