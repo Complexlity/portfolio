@@ -28,14 +28,14 @@ const Earnings = () => {
       description: "My personal github profile",
       links: ["https://github.com/Complexlity"],
     },
-    {
-      title: "Turnkey Challenge Twitter",
-      description: "A bounty I won building on turnkey",
-      links: [
-        "https://x.com/turnkeyhq/status/1887592837346435585?s=20",
-        "https://x.com/StackUpHQ/status/1806243708402127293?s=20",
-      ],
-    },
+  {
+    title: "Stackup Hackathon Win",
+    description: "Hack challenges I won on stackup",
+    links: [
+      "https://x.com/StackUpHQ/status/1806243708402127293?s=20",
+      "https://x.com/StackUpHQ/status/1734874613837123915?s=20",
+    ],
+  },
   ];
   return (
     <>
@@ -80,6 +80,7 @@ const Earnings = () => {
                             >
                               View Proof {linkIndex > 0 ? linkIndex + 1 : ""} →
                             </a>
+                            <br />
                           ))}
                         </div>
                       </div>
