@@ -14,6 +14,17 @@ const Earnings = () => {
       links: ["https://www.bountycaster.xyz/fid/213144/completed-bounties"],
     },
     {
+      title: "Bountycaster Cofounder Details",
+      description: "Contact details and social profiles for Bountycaster cofounder",
+      links: [
+        "mailto:example@email.com",
+        "https://linkedin.com/in/example",
+        "https://twitter.com/example",
+        "https://warpcast.com/example",
+      ],
+      linkLabels: ["Email", "LinkedIn", "Twitter", "Farcaster"],
+    },
+    {
       title: "OpenReplay Blog",
       description: "My technical articles and blog posts published on the official open replay blog",
       links: ["https://blog.openreplay.com/authors/nwalozie-elijah/"],
@@ -84,7 +95,7 @@ const Earnings = () => {
                                 rel="noreferrer"
                                 className="inline-block text-primary hover:underline dark:text-orange-300"
                               >
-                                Link {linkIndex > 0 ? linkIndex + 1 : ""} →
+                                {earning.linkLabels?.[linkIndex] || (linkIndex > 0 ? `Link ${linkIndex + 1}` : "Link")} →
                               </a>
                               <br />
                             </>
