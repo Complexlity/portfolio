@@ -85,20 +85,17 @@ const Earnings = () => {
                         <p className="mt-2 text-gray-600 dark:text-gray-300">
                           {earning.description}
                         </p>
-                        <div className="mt-4 space-y-2">
+                        <div className="mt-4 flex flex-wrap gap-4">
                           {earning.links.map((link, linkIndex) => (
-                            <>
-                              <a
-                                key={linkIndex}
-                                href={link}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="inline-block text-primary hover:underline dark:text-orange-300"
-                              >
-                                {earning.linkLabels?.[linkIndex] || (linkIndex > 0 ? `Link ${linkIndex + 1}` : "Link")} →
-                              </a>
-                              <br />
-                            </>
+                            <a
+                              key={linkIndex}
+                              href={link}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="inline-block text-primary hover:underline dark:text-orange-300"
+                            >
+                              {earning.linkLabels?.[linkIndex] || (linkIndex > 0 ? `Link ${linkIndex + 1}` : "Link")} →
+                            </a>
                           ))}
                         </div>
                       </div>
