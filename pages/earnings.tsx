@@ -31,7 +31,7 @@ const Earnings = () => {
    {
       title: "Turnkey Challenge Twitter",
       description: "A bounty I won building on turnkey",
-      link: "https://x.com/turnkeyhq/status/1887592837346435585?s=20",
+      links: ["https://x.com/turnkeyhq/status/1887592837346435585?s=20"],
     },
   {
     title: "Stackup Hackathon Win",
