@@ -31,12 +31,12 @@ const Earnings = () => {
     },
     {
       title: "Sololearn Profile",
-      description: "My sololearn profile showing my learnings",
+      description: "My Sololearn profile showcasing my learning journey and certifications across various programming languages and technologies, demonstrating my commitment to continuous skill development and technical education.",
       links: ["https://www.sololearn.com/en/profile/7680940"],
     },
     {
       title: "GitHub Profile",
-      description: "My personal github profile",
+      description: "My personal GitHub profile featuring my open source contributions, project repositories, and collaborative work on various software development projects, reflecting my coding expertise and engagement with the developer community.",
       links: ["https://github.com/Complexlity"],
     },
    {
