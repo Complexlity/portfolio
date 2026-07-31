@@ -41,7 +41,7 @@ const Earnings = () => {
     },
    {
       title: "Turnkey Challenge Twitter",
-      description: "A bounty I won building on turnkey",
+      description: "I built a decentralized bounty platform with Turnkey, utilizing passkeys and email authentication for its onboarding flow.This projecrt won a hackathon awarded by turnkey",
       links: ["https://x.com/turnkeyhq/status/1887592837346435585?s=20"],
     },
   {
