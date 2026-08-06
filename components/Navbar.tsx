@@ -81,9 +81,9 @@ const NavLinks = ({ animation, mobile }: navlinks) => {
     : `hidden gap-8 py-4 uppercase md:flex`;
   return (
     <div style={animation} className={wrapperStyles}>
-      <a href="#hero" className={linkStyles}>
+      <Link href="/#hero" className={linkStyles}>
         Home
-      </a>
+      </Link>
       <a target="_blank" rel="noreferrer" href={blogLink} className={linkStyles}>
         <span className="flex gap-1 items-start">
           <span>
@@ -95,18 +95,18 @@ const NavLinks = ({ animation, mobile }: navlinks) => {
 
         </span>
       </a>
-      <a href="#about" className={linkStyles}>
+      <Link href="/#about" className={linkStyles}>
         About
-      </a>
-      <a href="#projects" className={linkStyles}>
+      </Link>
+      <Link href="/#projects" className={linkStyles}>
         Projects
-      </a>
-      <a href="#skills" className={linkStyles}>
+      </Link>
+      <Link href="/#skills" className={linkStyles}>
         Skills
-      </a>
-      <a href="#contact" className={linkStyles}>
+      </Link>
+      <Link href="/#contact" className={linkStyles}>
         Contact
-      </a>
+      </Link>
 
     </div>
   );
